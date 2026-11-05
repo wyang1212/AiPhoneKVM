@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Information for Translators.
+        The "app_name" field corresponds to the name of the application as it appears in the Launcher.
+        You are free to translate it if it is relevant in your language.
+        However, this is optional, and you can retain the term "BT Remote".
+        If you choose to translate it, ensure that the name is 11 characters or fewer if possible.
+        If the text exceeds 11 characters, it's not a problem, but it may not display entirely in all launchers.
+    -->
+    <string name="app_name">AiPhoneKVM</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="error">Σφάλμα</string>
+    <string name="retry">Επανάληψη</string>
+    <!-- Bluetooth Support -->
+    <string name="bluetooth_not_supported_message">Η συσκευή σας δεν υποστηρίζει Bluetooth.</string>
+    <!-- Bluetooth Permission -->
+    <string name="permission">Άδεια</string>
+    <string name="bluetooth_permission_not_granted">Η άδεια απορρίφθηκε</string>
+    <string name="bluetooth_permission_message">Πρέπει να δώσετε πρόσβαση στο Bluetooth.</string>
+    <string name="bluetooth_permission_button">Πρόσβαση</string>
+    <string name="bluetooth_permission_denied_message">Απορρίψατε την πρόσβαση στο Bluetooth.</string>
+    <!-- Bluetooth Activation -->
+    <string name="activation">Ενεργοποίηση</string>
+    <string name="bluetooth_disabled_info">Το Bluetooth είναι ανενεργό</string>
+    <string name="bluetooth_disabled_message">Το Bluetooth στη συσκευή πρέπει να είναι ενεργό για να συνδεθεί με την τηλεόραση σας.</string>
+    <string name="bluetooth_enabled_button">Ενεργοποίηση Bluetooth</string>
+    <!-- Bluetooth Bonded Devices -->
+    <string name="devices">Συσκευές</string>
+    <string name="paired_devices">Συζευγμένες συσκευές</string>
+    <string name="unpair_device">Αποσύζευξη συσκευής</string>
+    <string name="unpair">Αποσύζευξη</string>
+    <string name="unpair_device_warning_message">Αυτή η συσκευή θα αποσυνδεθεί πλήρως από τη συσκευή σας. Θέλετε πραγματικά να συνεχίσετε;</string>
+    <!-- Bluetooth Pairing -->
+    <string name="pairing_a_device">Σύζευξη συσκευής</string>
+    <string name="available_devices">Διαθέσιμες συσκευές</string>
+    <string name="bluetooth_pairing_device_not_found">Δεν εντοπίσθηκε συσκευή.</string>
+    <string name="refresh">Ανανέωση</string>
+    <!-- Bluetooth Connecting -->
+    <string name="connection">Σύνδεση</string>
+    <string name="bluetooth_device_connecting_message">Σύνδεση στη \"%1$s\" συσκευή…</string>
+    <string name="bluetooth_device_disconnecting_message">Αποσύνδεση \"%1$s\"…</string>
+    <string name="bluetooth_failed_to_register_app_message">Αποτυχία εγγραφής της εφαρμογής. Βεβαιωθείτε ότι καμία άλλη υπηρεσία Bluetooth δεν εκτελείται στο παρασκήνιο. Εάν το σφάλμα παραμένει, είναι πιθανό η διαδικασία Bluetooth να διακόπηκε απροσδόκητα. Για να διορθώσετε αυτό το πρόβλημα, απενεργοποιήστε το Bluetooth στη συσκευή σας και, στη συνέχεια, ενεργοποιήστε το ξανά.</string>
+    <string name="bluetooth_failed_to_connect_to_device">Η προσπάθεια σύνδεσης με την απομακρυσμένη συσκευή απέτυχε.</string>
+    <string name="bluetooth_failed_try_again">Προσπαθείστε ξανά.</string>
+    <!-- Remote Screen -->
+    <string name="remote">Χειριστήριο</string>
+    <string name="more">Περισσότερα</string>
+    <string name="disconnect">Αποσύνδεση</string>
+    <string name="direction_arrows">Βέλη κατεύθυνσης</string>
+    <!-- Settings -->
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="appearance">Εμφάνιση</string>
+    <string name="theme">Θέμα</string>
+    <string name="theme_system">Σύστημα</string>
+    <string name="theme_light">Φωτεινό</string>
+    <string name="theme_dark">Σκοτεινό</string>
+    <string name="theme_black">Πραγματικό μαύρο στο σκοτεινό θέμα</string>
+    <string name="theme_black_oled_info">Χρησιμοποιεί λιγότερη ενέργεια στις οθόνες OLED</string>
+    <string name="dynamic_colors">Δυναμικά χρώματα</string>
+    <string name="mouse_pointer_speed">Ταχύτητα δείκτη</string>
+    <string name="invert_mouse_scrolling_direction">Αντιστροφή κατεύθυνσης κύλισης</string>
+    <string name="use_the_gyroscope_to_control_the_mouse">Χρήση του γυροσκοπίου για έλεγχο του ποντικιού</string>
+    <string name="keyboard_and_input_field">Πληκτρολόγιο και πεδίο εισαγωγής</string>
+    <string name="clear_input_field">Εκκαθάριση πεδίου εισαγωγής μετά την αποστολή κειμένου</string>
+    <string name="about">Σχετικά</string>
+    <string name="language">Γλώσσα</string>
+    <string name="third_party_library">Βιβλιοθήκες τρίτων</string>
+    <string name="website">Ιστότοπος</string>
+    <string name="source_code">Πηγαίος κώδικας</string>
+    <!-- Keyboard -->
+    <string name="keyboard">Πληκτρολόγιο</string>
+    <string name="keyboard_language">Γλώσσα πληκτρολογίου</string>
+    <string name="keyboard_language_info">Βεβαιωθείτε ότι η επιλεγμένη γλώσσα πληκτρολογίου ταιριάζει με αυτήν που έχει διαμορφωθεί στην απομακρυσμένη συσκευή.</string>
+    <string name="advanced_keyboard">Προηγμένο πληκτρολόγιο</string>
+    <string name="keyboard_english_us">Αγγλικά (ΗΠΑ)</string>
+    <string name="keyboard_english_uk">Αγγλικά (ΗΒ)</string>
+    <string name="keyboard_spanish">Ισπανικά</string>
+    <string name="keyboard_french">Γαλλικά</string>
+    <string name="keyboard_german">Γερμανικά</string>
+    <string name="keyboard_russian">Ρωσικά</string>
+    <string name="keyboard_czech">Τσέχικα</string>
+    <string name="keyboard_polish">Πολωνικά</string>
+    <string name="keyboard_portuguese">Πορτογαλικά</string>
+    <string name="keyboard_portuguese_br">Πορτογαλικά (Βραζιλίας)</string>
+    <string name="keyboard_greek">Ελληνικά</string>
+    <string name="keyboard_turkish">Τουρκικά</string>
+    <string name="send">Αποστολή</string>
+    <string name="enter">Enter</string>
+    <string name="escape">Esc</string>
+    <string name="delete">Delete</string>
+    <string name="space_bar">Πλήκτρο Space Bar</string>
+    <string name="print_screen">Πλήκτρο Print Screen</string>
+    <string name="shift">Shift</string>
+    <string name="meta">Meta</string>
+    <string name="ctrl">Ctrl</string>
+    <string name="alt">Alt</string>
+    <string name="alt_gr">Alt Gr</string>
+    <!-- Remote button description -->
+    <string name="pick">Επιλογή</string>
+    <string name="up">Πάνω</string>
+    <string name="down">Κάτω</string>
+    <string name="left">Αριστερά</string>
+    <string name="right">Δεξιά</string>
+    <string name="play">Αναπαραγωγή</string>
+    <string name="pause">Παύση</string>
+    <string name="previous">Προηγούμενο</string>
+    <string name="next">Επόμενο</string>
+    <string name="mute">Σίγαση</string>
+    <string name="home">Αρχική</string>
+    <string name="back">Πίσω</string>
+    <string name="standby">Αναμονή</string>
+    <string name="next_channel">Επόμενο κανάλι</string>
+    <string name="previous_channel">Προηγούμενο κανάλι</string>
+    <string name="power">Ισχύς</string>
+    <string name="menu">Μενού</string>
+    <string name="closed_captions">Υπότιτλοι</string>
+    <!-- Mouse -->
+    <string name="mouse">Ποντίκι</string>
+    <string name="mouse_click_left">Αριστερό κλικ</string>
+    <string name="mouse_click_right">Δεξί κλικ</string>
+    <string name="mouse_click_middle">Μεσαίο κλικ</string>
+    <string name="mouse_wheel_up">Σύρσιμο επάνω</string>
+    <string name="mouse_wheel_down">Σύρσιμο κάτω</string>
+    <string name="mouse_pad_tap">Πάτημα</string>
+    <!-- Notification -->
+    <string name="notification_channel_name">Σύνδεση Bluetooth HID</string>
+    <string name="connected_on">Συνδέθηκε στο %1$s</string>
+    <!-- Help messages -->
+    <string name="help">Βοήθεια</string>
+    <string name="help_select_device_from_list">Επιλέξτε τη συσκευή με την οποία θέλετε να συνδεθείτε από τη λίστα των συζευγμένων συσκευών.</string>
+    <string name="help_missing_device_title">Έλλειψη συσκευής</string>
+    <string name="help_missing_device_message">Εάν η απομακρυσμένη συσκευή δεν εμφανίζεται στη λίστα των συζευγμένων συσκευών, πρέπει να την αντιστοιχίσετε πατώντας το εικονίδιο στην επάνω γραμμή.</string>
+    <string name="help_device_failed_connection_title">Αποτυχία σύνδεσης</string>
+    <string name="help_device_failed_connection_message_1">Εάν δεν μπορείτε να συνδεθείτε στην απομακρυσμένη συσκευή, φροντίστε να ακολουθήσετε τις παρακάτω οδηγίες:</string>
+    <string name="help_device_failed_connection_check_1">• Βεβαιωθείτε ότι η απομακρυσμένη συσκευή λειτουργεί σε Android ή Android TV.</string>
+    <string name="help_device_failed_connection_check_2">• Βεβαιωθείτε ότι η λειτουργία Bluetooth είναι ενεργοποιημένη στην απομακρυσμένη συσκευή.</string>
+    <string name="help_device_failed_connection_check_3">• Βεβαιωθείτε ότι και οι δύο συσκευές είναι αρκετά κοντά η μία στην άλλη.</string>
+    <string name="help_device_failed_connection_check_4">• Δοκιμάστε να συνδεθείτε πολλές φορές.</string>
+    <string name="help_device_failed_connection_message_2">Εάν, παρά αυτούς τους ελέγχους, εξακολουθείτε να μην μπορείτε να συνδεθείτε στην απομακρυσμένη συσκευή, προχωρήστε ως εξής:</string>
+    <string name="help_device_failed_connection_check_5">• Καταργήστε τη σύζευξη των δύο συσκευών, τόσο στην τρέχουσα συσκευή όσο και στην απομακρυσμένη συσκευή.</string>
+    <string name="help_device_failed_connection_check_6">• Αντιστοιχίστε ξανά τις δύο συσκευές πατώντας το εικονίδιο που βρίσκεται στην επάνω γραμμή.</string>
+    <string name="help_device_failed_connection_message_3">Εάν το πρόβλημα παραμένει, βεβαιωθείτε ότι ο αισθητήρας Bluetooth των συσκευών σας δεν είναι ελαττωματικός.</string>
+    <string name="help_paring_select_device_from_list">Επιλέξτε τη συσκευή με την οποία θέλετε να πραγματοποιήσετε σύζευξη από τη λίστα των διαθέσιμων συσκευών.</string>
+    <string name="help_pairing_missing_device_message_1">Εάν η συσκευή με την οποία θέλετε να πραγματοποιήσετε σύζευξη δεν εμφανίζεται, ακολουθήστε τις παρακάτω οδηγίες:</string>
+    <string name="help_pairing_missing_device_check_2">• Βεβαιωθείτε ότι η ορατότητα Bluetooth είναι ενεργοποιημένη στην απομακρυσμένη συσκευή.</string>
+    <string name="help_pairing_missing_device_check_location_for_android_11_or_less">• Βεβαιωθείτε ότι οι υπηρεσίες τοποθεσίας είναι ενεργοποιημένες στη συσκευή σας.</string>
+    <string name="help_pairing_connection_initialization_error_message_1">Εάν έχετε αντιστοιχίσει επιτυχώς και τις δύο συσκευές αλλά αντιμετωπίζετε σφάλματα \"%1$s\" ή \"%2$s\":</string>
+    <string name="help_pairing_device_failed_connection_message_1">Εάν έχετε αντιστοιχίσει επιτυχώς και τις δύο συσκευές, αλλά δεν μπορείτε να συνδεθείτε στην απομακρυσμένη συσκευή, φροντίστε να ακολουθήσετε τις παρακάτω οδηγίες:</string>
+    <string name="help_remote_control_buttons_are_not_working_title">Κουμπιά τηλεχειριστηρίου</string>
+    <string name="help_remote_control_buttons_are_not_working_message">Εάν το πληκτρολόγιο, το ποντίκι ή ορισμένα κουμπιά δεν λειτουργούν, ακολουθήστε τις παρακάτω οδηγίες:</string>
+    <string name="help_remote_control_buttons_are_not_working_check_2">• Αποσυνδεθείτε από την απομακρυσμένη συσκευή.</string>
+    <string name="help_remote_control_buttons_are_not_working_check_3">• Καταργήστε τη σύζευξη των συσκευών, τόσο σε αυτήν τη συσκευή όσο και στην απομακρυσμένη συσκευή.</string>
+    <string name="help_remote_control_buttons_are_not_working_check_4">• Στη συνέχεια, αντιστοιχίστε ξανά τις δύο συσκευές χρησιμοποιώντας αυτήν την εφαρμογή.</string>
+    <string name="help_keyboard_wrong_character_sent_message">Εάν οι χαρακτήρες που αποστέλλονται είναι λανθασμένοι, πρέπει να διαμορφώσετε το φυσικό πληκτρολόγιο στην απομακρυσμένη συσκευή ώστε να ταιριάζει με τη γλώσσα που έχει επιλεγεί στις ρυθμίσεις της εφαρμογής.</string>
+    <string name="automatic_connect">Αυτόματη Σύνδεση</string>
+    <string name="disabled_automatic_connection_message">Θέλετε να απενεργοποιήσετε την αυτόματη σύνδεση;</string>
+    <string name="automatic_shorten">Αυτόματα</string>
+    <string name="name_of_this_device">Όνομα αυτής της συσκευής : %1$s.</string>
+    <string name="pairing_from_a_remote_device_step_1_title">1. Ενεργοποιήστε την ορατότητα Bluetooth</string>
+    <string name="pairing_from_a_remote_device_step_1_content_1">Πρέπει πρώτα να ενεργοποιήσετε την ορατότητα Bluetooth σε αυτήν τη συσκευή.</string>
+    <string name="pairing_from_a_remote_device_step_1_content_2">Αυτή η συσκευή θα πρέπει να είναι ορατή σε άλλες συσκευές με το όνομα: %1$s.</string>
+    <string name="enabled_bluetooth_visibility">Ενεργή ορατότητα Bluetooth</string>
+    <string name="pairing_from_a_remote_device_step_2_title">2. Αντιστοιχίστε τις δύο συσκευές</string>
+    <string name="pairing_from_a_remote_device_step_2_content_1">Στην απομακρυσμένη συσκευή:</string>
+    <string name="pairing_from_a_remote_device_step_2_content_4">Εάν δεν εμφανιστεί αίτημα επιβεβαίωσης, επανεκκινήστε το Bluetooth στην απομακρυσμένη συσκευή και επαναλάβετε τα προηγούμενα βήματα.</string>
+    <string name="pairing_from_a_remote_device_step_3_title">3. Αποσυνδέστε τις συσκευές</string>
+    <string name="pairing_from_a_remote_device_step_3_content_2">- Μεταβείτε στις ρυθμίσεις Bluetooth στη συσκευή σας.\n- Αποσυνδέστε χειροκίνητα την απομακρυσμένη συσκευή.</string>
+    <string name="open_bluetooth_settings">Άνοιγμα ρυθμίσεων Bluetooth</string>
+    <string name="pairing_from_a_remote_device_step_4_title">4. Οριστικοποίηση</string>
+    <string name="done">Ολοκληρώθηκε</string>
+    <string name="unknown">άγνωστο</string>
+    <string name="enter_bluetooth_address_manually">Χειροκίνητη εισαγωγή διεύθυνσης Bluetooth</string>
+    <string name="bluetooth_address_prompt">Εισάγετε τη διεύθυνση Bluetooth της απομακρυσμένης συσκευής:</string>
+    <string name="user_interface">Διεπαφή</string>
+    <string name="minimalist_interface_info">Δεν εμφανίζει τα κουμπιά των τηλεοπτικών καναλιών</string>
+    <string name="navigation_mode">Λειτουργία Πλοήγησης</string>
+    <string name="d_pad">Χειριστήριο D-pad</string>
+    <string name="touchpad">Επιφάνεια αφής</string>
+    <string name="touchpad_description">Πλοήγηση μέσω χειρονομιών αφής</string>
+    <string name="pairing_from_a_remote_device_intro_title">Οδηγός για τη σύζευξη μιας συσκευής από την απομακρυσμένη συσκευή</string>
+    <string name="pairing_from_a_remote_device_step_2_content_2">- Ανοίξτε τις ρυθμίσεις Bluetooth.\n- Επιλέξτε σύζευξη νέας συσκευής.\n- Η συσκευή \"%1$s\" θα πρέπει να εμφανίζεται στη λίστα των διαθέσιμων συσκευών.\n- Επιλέξτε τη συσκευή \"%1$s\" για να ξεκινήσετε τη σύζευξη.</string>
+    <string name="full_screen">Πλήρης οθόνη</string>
+    <string name="d_pad_description">Πλοήγηση μέσω χειριστηρίων κατεύθυνσης</string>
+    <string name="information">Πληροφορίες</string>
+    <string name="pairing_from_the_remote_device">Σύζευξη από την απομακρυσμένη συσκευή</string>
+    <string name="tv">TV</string>
+    <string name="unpair_device_successful">Η συσκευή έχει αποσυνδεθεί επιτυχώς.</string>
+    <string name="enabled_automatic_connection_message">Θέλετε να συνδέεστε αυτόματα σε αυτήν τη συσκευή κατά την εκκίνηση της εφαρμογής;</string>
+    <string name="pairing_from_a_remote_device_step_4_content">Εάν έχετε ακολουθήσει όλα τα προηγούμενα βήματα, η σύζευξη ήταν επιτυχής και έχετε αποσυνδέσει και τις δύο συσκευές, μπορείτε να επιλέξετε το κουμπί \"%1$s\". Η απομακρυσμένη συσκευή θα πρέπει να εμφανίζεται στη λίστα των συζευγμένων συσκευών. Επιλέξτε την για να δημιουργήσετε τη σύνδεση χρησιμοποιώντας το πρωτόκολλο HID.</string>
+    <string name="help_info_message">Εάν αντιμετωπίζετε προβλήματα, ελέγξτε την ενότητα βοήθειας.</string>
+    <string name="unpair_device_failure">Αποτυχία! Δεν ήταν δυνατή η αποσύνδεση της συσκευής.</string>
+    <string name="pairing_from_a_remote_device_intro_content">Σε ορισμένες συσκευές, η ορατότητα Bluetooth μπορεί να είναι απενεργοποιημένη, αποτρέποντας τον εντοπισμό τους από την εφαρμογή. Αυτός ο οδηγός θα σας βοηθήσει να επιλύσετε το πρόβλημα εξηγώντας πώς να αντιστοιχίσετε τις συσκευές σας απευθείας από την απομακρυσμένη συσκευή.</string>
+    <string name="pairing_from_a_remote_device_step_2_content_3">Θα πρέπει να εμφανιστεί ένα αίτημα επιβεβαίωσης σύζευξης και στις δύο συσκευές. Πρέπει να αποδεχτείτε αυτό το αίτημα και στις δύο συσκευές για να ολοκληρώσετε τη σύζευξη Bluetooth.</string>
+    <string name="bluetooth_address">Διεύθυνση Bluetooth</string>
+    <string name="bluetooth_address_wrong_format">Η διεύθυνση που εισάγατε είναι σε λάθος μορφή. Πρέπει να περιέχει 6 ζεύγη δεκαεξαδικών χαρακτήρων.\nΠ.χ. : 00:1A:2B:3C:4D:5E.</string>
+    <string name="pairing_from_a_remote_device_step_3_content_1">Εάν η σύζευξη ήταν επιτυχής, η συσκευή Android θα πρέπει να συνδεθεί αυτόματα στην απομακρυσμένη συσκευή. Ωστόσο, αυτή η σύνδεση δεν χρησιμοποιεί το πρωτόκολλο HID (Human Interface Device), το οποίο εμποδίζει τη λειτουργία του τηλεχειριστηρίου. Για να επιλύσετε αυτό το ζήτημα:</string>
+    <string name="use_minimalist_interface">Χρήση μινιμαλιστικής διεπαφής</string>
+    <string name="keyboard_hebrew">Εβραϊκά</string>
+    <string name="keyboard_bulgarian">Βουλγαρικά</string>
+    <string name="help_remote_control_buttons_are_not_working_message_2">Κάθε εφαρμογή που χρησιμοποιεί το πρωτόκολλο HID μπορεί να βασίζεται σε διαφορετικό προφίλ. Εάν έχετε προηγουμένως συνδέσει τις συσκευές σας μέσω άλλης εφαρμογής, ίσως χρειαστεί να τις επανασυνδέσετε για να επαναφέρετε το προφίλ. Χωρίς αυτό το βήμα, τα κουμπιά ενδέχεται να μην λειτουργούν όπως αναμένεται ή να στέλνουν εσφαλμένες τιμές.</string>
+    <string name="connected_off">Καμία συνδεδεμένη συσκευή</string>
+    <string name="open">Άνοιγμα</string>
+    <string name="integrate_advanced_keyboard_into_the_view">Ενοποίησε το προχωρημένο πληκτρολόγιο μέσα στην άποψη</string>
+    <string name="keyboard_ukrainian">Ουκρανικό</string>
+    <string name="help_info_hid_service_not_initialized_message">Η υπηρεσία HID δεν έχει αρχικοποιηθεί. Συμβουλευτείτε την ενότητα βοήθειας.</string>
+    <string name="help_hid_service_not_initialized_message_2">• Εάν αυτή η επιλογή είναι διαθέσιμη, απενεργοποιήστε την και στη συνέχεια επανεκκινήστε τη συσκευή σας. Μετά την επανεκκίνηση, το προφίλ HID θα πρέπει να λειτουργεί κανονικά.</string>
+    <string name="keyboard_persian">Περσικά</string>
+    <string name="help_hid_service_not_initialized_title">Η υπηρεσία HID δεν έχει αρχικοποιηθεί</string>
+    <string name="help_hid_service_not_initialized_message_1">Εάν ένα μήνυμα υποδεικνύει ότι η υπηρεσία hid δεν έχει αρχικοποιηθεί, μεταβείτε στις επιλογές προγραμματιστή της συσκευής σας και αναζητήστε την επιλογή \"Απενεργοποίηση προφίλ bluetooth HID συσκευής\":</string>
+    <string name="help_hid_service_not_initialized_message_3">• Εάν αυτή η επιλογή δεν είναι διαθέσιμη, η συσκευή σας ενδέχεται να μην υποστηρίζει το προφίλ HID. Σε αυτήν την περίπτωση, δυστυχώς δε θα μπορείτε να χρησιμοποιήσετε αυτήν την εφαρμογή σε αυτήν τη συσκευή.</string>
+    <string name="use_enter_for_selection_title">Χρήση του κουμπιού Enter για επιλογή</string>
+    <string name="use_enter_for_selection_summary">Ενεργοποιήσετε το μόνο αν το κουμπί επιλογής δεν λειτουργεί</string>
+    <string name="favorites">Αγαπημένα</string>
+    <string name="remove_from_favorites">Διαγραφή από τα αγαπημένα</string>
+    <string name="add_to_favorites">Προσθήκη στα αγαπημένα</string>
+    <string name="hide_bluetooth_activation_button">Απόκρυψη κουμπιού ενεργοποίησης Bluetooth κατά την εκκίνηση</string>
+    <string name="advanced_options">Προχωρημένες ρυθμίσεις</string>
+    <string name="connect">Σύνδεση</string>
+    <string name="media_controls">Στοιχεία ελέγχου πολυμέσων</string>
+    <string name="no_device_registered">Δεν έχει καταχωρηθεί συσκευή.</string>
+    <string name="code_version">Έκδοση %1$s</string>
+    <string name="yellow_menu_button">Κίτρινο</string>
+    <string name="blue_menu_button">Μπλε</string>
+    <string name="green_menu_button">Πράσινο</string>
+    <string name="red_menu_button">Κόκκινο</string>
+    <string name="more_buttons">Περισσότερα κουμπιά</string>
+    <string name="stop">Τερματισμός</string>
+    <string name="repeat">Επανάληψη</string>
+    <string name="previous_track">Προηγούμενο κομμάτι</string>
+    <string name="next_track">Επόμενο κομμάτι</string>
+    <string name="rewind">Επαναφορά</string>
+    <string name="forward">Μπροστά</string>
+    <string name="volume_up">Ένταση +</string>
+    <string name="volume_down">Ένταση -</string>
+    <string name="brightness_up">Φωτεινότητα +</string>
+    <string name="brightness_down">Φωτεινότητα -</string>
+    <string name="screenshot">Στιγμιότυπο οθόνης</string>
+    <string name="use_mouse_navigation_by_default">Χρήση πλοήγησης με ποντίκι από προεπιλογή</string>
+    <string name="keyboard_tab">Καρτέλα</string>
+    <string name="play_pause">Αναπαραγωγή / Παύση</string>
+    <string name="page_down">Σελίδα κάτω</string>
+    <string name="page_up">Σελίδα πάνω</string>
+    <string name="default_option">Προεπιλογή</string>
+    <string name="assign_action_volume_down_button">Αντιστοίχιση ενέργειας στο κουμπί μείωσης έντασης ήχου</string>
+    <string name="assign_action_volume_up_button">Αντιστοίχιση ενέργειας στο κουμπί αύξησης έντασης ήχου</string>
+    <string name="mouse_scroll_speed">Ταχύτητα κύλισης</string>
+    <string name="show_remote_buttons_in_notification">Εμφάνιση κουμπιών τηλεχειριστηρίου στην ειδοποίηση</string>
+    <string name="keyboard_arabic">Αραβικά</string>
+</resources>

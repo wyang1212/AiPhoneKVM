@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md. -->
+<resources>
+    <string name="oss_source_host" translatable="false">Source code</string>
+    <string name="oss_gpl3_name" translatable="false">GNU GPL version 3</string>
+    <string name="oss_gpl3_url" translatable="false">https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="oss_edl_name" translatable="false">Eclipse Distribution License 1.0</string>
+    <string name="oss_edl_url" translatable="false">https://www.eclipse.org/org/documents/edl-v10.php</string>
+    <string name="oss_bsd_name" translatable="false">BSD 3-Clause</string>
+    <string name="oss_bsd_url" translatable="false">https://github.com/NanoHttpd/nanohttpd/blob/nanohttpd-project-2.3.1/LICENSE.md</string>
+    <string name="oss_aiphonekvm_source_name" translatable="false">AiPhoneKVM — modified application</string>
+    <string name="oss_aiphonekvm_source_id" translatable="false">GNU GPL version 3; redistribution permitted; NO WARRANTY; see corresponding source</string>
+    <string name="oss_aiphonekvm_source_url" translatable="false">https://github.com/wyang1212/AiPhoneKVM</string>
+    <string name="oss_btremote_source_name" translatable="false">Atharok / BT Remote</string>
+    <string name="oss_btremote_source_id" translatable="false">Android UI and HID source; modified for AiPhoneKVM</string>
+    <string name="oss_btremote_source_url" translatable="false">https://gitlab.com/Atharok/BtRemote</string>
+    <string name="oss_android_bt_remote_source_name" translatable="false">jqssun / android-bt-remote</string>
+    <string name="oss_android_bt_remote_source_id" translatable="false">Universal keyboard, mouse and media source; modified</string>
+    <string name="oss_android_bt_remote_source_url" translatable="false">https://github.com/jqssun/android-bt-remote</string>
+    <string name="oss_bluehidflow_reference_name" translatable="false">antgroup / BlueHIDFlow</string>
+    <string name="oss_bluehidflow_reference_id" translatable="false">Protocol/workflow reference; ESP32 firmware not shipped</string>
+    <string name="oss_bluehidflow_reference_url" translatable="false">https://github.com/antgroup/BlueHIDFlow</string>
+    <string name="oss_reorderable_name" translatable="false">Reorderable 3.1.0</string>
+    <string name="oss_reorderable_id" translatable="false">sh.calvin.reorderable:reorderable</string>
+    <string name="oss_reorderable_url" translatable="false">https://github.com/Calvin-LL/Reorderable</string>
+    <string name="oss_zxing_embedded_name" translatable="false">ZXing Android Embedded 4.3.0</string>
+    <string name="oss_zxing_embedded_id" translatable="false">com.journeyapps:zxing-android-embedded</string>
+    <string name="oss_zxing_embedded_url" translatable="false">https://github.com/journeyapps/zxing-android-embedded</string>
+    <string name="oss_zxing_core_name" translatable="false">ZXing core 3.4.1</string>
+    <string name="oss_zxing_core_id" translatable="false">com.google.zxing:core</string>
+    <string name="oss_zxing_core_url" translatable="false">https://github.com/zxing/zxing</string>
+    <string name="oss_paho_mqtt_name" translatable="false">Eclipse Paho Java 1.2.5</string>
+    <string name="oss_paho_mqtt_id" translatable="false">EDL-1.0 option; upstream also offers EPL-2.0</string>
+    <string name="oss_paho_mqtt_url" translatable="false">https://github.com/eclipse-paho/paho.mqtt.java</string>
+    <string name="oss_nano_httpd_name" translatable="false">NanoHTTPD 2.3.1</string>
+    <string name="oss_nano_httpd_id" translatable="false">org.nanohttpd:nanohttpd</string>
+    <string name="oss_nano_httpd_url" translatable="false">https://github.com/NanoHttpd/nanohttpd</string>
+    <string name="oss_kotlin_runtime_name" translatable="false">Kotlin runtime 2.4.0</string>
+    <string name="oss_kotlin_runtime_id" translatable="false">org.jetbrains.kotlin:kotlin-stdlib</string>
+    <string name="oss_kotlin_runtime_url" translatable="false">https://github.com/JetBrains/kotlin</string>
+    <string name="oss_kotlin_coroutines_name" translatable="false">Kotlin coroutines 1.9.0</string>
+    <string name="oss_kotlin_coroutines_id" translatable="false">org.jetbrains.kotlinx:kotlinx-coroutines-core</string>
+    <string name="oss_kotlin_coroutines_url" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+    <string name="oss_glance_name" translatable="false">AndroidX Glance 1.1.1</string>
+    <string name="oss_glance_id" translatable="false">androidx.glance:glance-appwidget / glance-material3</string>
+    <string name="oss_glance_url" translatable="false">https://github.com/androidx/androidx</string>
+    <string name="oss_work_manager_name" translatable="false">AndroidX WorkManager 2.11.2</string>
+    <string name="oss_work_manager_id" translatable="false">androidx.work:work-runtime-ktx</string>
+    <string name="oss_work_manager_url" translatable="false">https://github.com/androidx/androidx</string>
+    <string name="oss_okio_name" translatable="false">Okio 3.9.1</string>
+    <string name="oss_okio_id" translatable="false">com.squareup.okio:okio; capture helper uses 3.16.4</string>
+    <string name="oss_okio_url" translatable="false">https://github.com/square/okio</string>
+    <string name="oss_stately_name" translatable="false">Stately 2.1.0</string>
+    <string name="oss_stately_id" translatable="false">co.touchlab:stately-concurrency / concurrent-collections</string>
+    <string name="oss_stately_url" translatable="false">https://github.com/touchlab/Stately</string>
+    <string name="oss_jspecify_name" translatable="false">JSpecify 1.0.0</string>
+    <string name="oss_jspecify_id" translatable="false">org.jspecify:jspecify</string>
+    <string name="oss_jspecify_url" translatable="false">https://github.com/jspecify/jspecify</string>
+    <string name="oss_guava_future_name" translatable="false">Guava ListenableFuture 1.0</string>
+    <string name="oss_guava_future_id" translatable="false">com.google.guava:listenablefuture</string>
+    <string name="oss_guava_future_url" translatable="false">https://github.com/google/guava</string>
+    <string name="oss_java_annotations_name" translatable="false">JetBrains annotations 23.0.0</string>
+    <string name="oss_java_annotations_id" translatable="false">org.jetbrains:annotations</string>
+    <string name="oss_java_annotations_url" translatable="false">https://github.com/JetBrains/java-annotations</string>
+    <string name="oss_protobuf_name" translatable="false">AndroidX relocated Protocol Buffers</string>
+    <string name="oss_protobuf_id" translatable="false">DataStore 1.2.1 / Glance 1.1.1 repackaged Protobuf runtime</string>
+    <string name="oss_protobuf_url" translatable="false">https://github.com/protocolbuffers/protobuf</string>
+    <string name="oss_protobuf_license_url" translatable="false">https://github.com/protocolbuffers/protobuf/blob/main/LICENSE</string>
+</resources>

@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 1,
+  "fixtureOnly": true,
+  "classification": "UI TEST — synthetic, non-secret demonstration data",
+  "notPhysicalAcceptance": [
+    "Bluetooth delivery",
+    "camera optics",
+    "voice recognition",
+    "real model output",
+    "server enrollment",
+    "game-console compatibility"
+  ],
+  "screenshots": [
+    {
+      "id": "C01-permissions",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C01-permissions-UI_TEST.png"
+    },
+    {
+      "id": "C02-bluetooth-disabled",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C02-bluetooth-disabled-UI_TEST.png",
+      "note": "Production ActivationView with Bluetooth-disabled fixture; no Bluetooth switch is touched"
+    },
+    {
+      "id": "C03-bluetooth-unsupported",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C03-bluetooth-unsupported-UI_TEST.png"
+    },
+    {
+      "id": "C04-home-empty",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C04-home-empty-UI_TEST.png"
+    },
+    {
+      "id": "C05-home-selected",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C05-home-selected-UI_TEST.png"
+    },
+    {
+      "id": "C07-home-editing",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C07-home-editing-UI_TEST.png"
+    },
+    {
+      "id": "C08-home-help",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C08-home-help-UI_TEST.png"
+    },
+    {
+      "id": "C06-home-different-connection",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C06-home-different-connection-UI_TEST.png",
+      "note": "Two distinct synthetic identities, not a real connection"
+    },
+    {
+      "id": "C09-device-empty-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C09-device-empty-01-UI_TEST.png"
+    },
+    {
+      "id": "C10-device-paired-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C10-device-paired-01-UI_TEST.png"
+    },
+    {
+      "id": "C11-device-advanced-menu",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C11-device-advanced-menu-UI_TEST.png"
+    },
+    {
+      "id": "C13-device-item-menu",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C13-device-item-menu-UI_TEST.png"
+    },
+    {
+      "id": "C12-manual-address",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C12-manual-address-UI_TEST.png"
+    },
+    {
+      "id": "C14-auto-connect",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C14-auto-connect-UI_TEST.png"
+    },
+    {
+      "id": "C15-unpair-confirmation",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C15-unpair-confirmation-UI_TEST.png"
+    },
+    {
+      "id": "C16-device-scanning",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C16-device-scanning-UI_TEST.png"
+    },
+    {
+      "id": "C16-device-search-empty",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C16-device-search-empty-UI_TEST.png"
+    },
+    {
+      "id": "C16-device-search-results",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C16-device-search-results-UI_TEST.png"
+    },
+    {
+      "id": "C17-pairing-guide-1-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C17-pairing-guide-1-01-UI_TEST.png"
+    },
+    {
+      "id": "C17-pairing-guide-2-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C17-pairing-guide-2-01-UI_TEST.png"
+    },
+    {
+      "id": "C17-pairing-guide-3-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C17-pairing-guide-3-01-UI_TEST.png"
+    },
+    {
+      "id": "C17-pairing-guide-4-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C17-pairing-guide-4-01-UI_TEST.png"
+    },
+    {
+      "id": "C17-pairing-guide-5-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C17-pairing-guide-5-01-UI_TEST.png"
+    },
+    {
+      "id": "C23-connecting",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C23-connecting-UI_TEST.png"
+    },
+    {
+      "id": "C23-entry-error",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C23-entry-error-UI_TEST.png"
+    },
+    {
+      "id": "C24-settings-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C24-settings-01-UI_TEST.png"
+    },
+    {
+      "id": "C24-settings-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C24-settings-02-UI_TEST.png"
+    },
+    {
+      "id": "C28-theme-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C28-theme-01-UI_TEST.png"
+    },
+    {
+      "id": "C29-volume-up-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C29-volume-up-01-UI_TEST.png"
+    },
+    {
+      "id": "C29-volume-up-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C29-volume-up-02-UI_TEST.png"
+    },
+    {
+      "id": "C29-volume-down-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C29-volume-down-01-UI_TEST.png"
+    },
+    {
+      "id": "C29-volume-down-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C29-volume-down-02-UI_TEST.png"
+    },
+    {
+      "id": "C30-keyboard-language-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C30-keyboard-language-01-UI_TEST.png"
+    },
+    {
+      "id": "C30-keyboard-language-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C30-keyboard-language-02-UI_TEST.png"
+    },
+    {
+      "id": "C31-libraries-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C31-libraries-01-UI_TEST.png"
+    },
+    {
+      "id": "C31-libraries-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C31-libraries-02-UI_TEST.png"
+    },
+    {
+      "id": "C31-libraries-03",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C31-libraries-03-UI_TEST.png"
+    },
+    {
+      "id": "C32-update",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "C32-update-UI_TEST.png",
+      "note": "Reserved-invalid or disabled update source; no installation is attempted"
+    },
+    {
+      "id": "M01-compact-letters",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M01-compact-letters-UI_TEST.png"
+    },
+    {
+      "id": "M02-compact-shift",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M02-compact-shift-UI_TEST.png"
+    },
+    {
+      "id": "M03-compact-numbers",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M03-compact-numbers-UI_TEST.png"
+    },
+    {
+      "id": "M04-compact-symbols",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M04-compact-symbols-UI_TEST.png"
+    },
+    {
+      "id": "M05-compact-functions",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M05-compact-functions-UI_TEST.png"
+    },
+    {
+      "id": "M07-media-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M07-media-01-UI_TEST.png"
+    },
+    {
+      "id": "M08-mouse",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M08-mouse-UI_TEST.png"
+    },
+    {
+      "id": "M09-tv-complete",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M09-tv-complete-UI_TEST.png"
+    },
+    {
+      "id": "M09-tv-overflow",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M09-tv-overflow-UI_TEST.png"
+    },
+    {
+      "id": "M10-tv-minimal",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M10-tv-minimal-UI_TEST.png"
+    },
+    {
+      "id": "M11-tv-mouse-navigation",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M11-tv-mouse-navigation-UI_TEST.png"
+    },
+    {
+      "id": "M12-tv-standard-keyboard",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M12-tv-standard-keyboard-UI_TEST.png"
+    },
+    {
+      "id": "M13-tv-advanced-keyboard",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M13-tv-advanced-keyboard-UI_TEST.png"
+    },
+    {
+      "id": "M14-tv-more-buttons-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M14-tv-more-buttons-01-UI_TEST.png"
+    },
+    {
+      "id": "M15-tv-channels",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M15-tv-channels-UI_TEST.png"
+    },
+    {
+      "id": "M18-tv-help-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "M18-tv-help-01-UI_TEST.png"
+    },
+    {
+      "id": "A01-task-default-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A01-task-default-01-UI_TEST.png"
+    },
+    {
+      "id": "A01-task-default-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A01-task-default-02-UI_TEST.png"
+    },
+    {
+      "id": "A02-task-limits-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A02-task-limits-01-UI_TEST.png"
+    },
+    {
+      "id": "A02-task-limits-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A02-task-limits-02-UI_TEST.png"
+    },
+    {
+      "id": "A04-single-step-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A04-single-step-01-UI_TEST.png"
+    },
+    {
+      "id": "A04-single-step-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A04-single-step-02-UI_TEST.png"
+    },
+    {
+      "id": "A03-fixture-preview-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A03-fixture-preview-01-UI_TEST.png"
+    },
+    {
+      "id": "A03-fixture-preview-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A03-fixture-preview-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-running-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-running-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-running-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-running-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-stopping-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-stopping-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-stopping-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-stopping-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-completed-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-completed-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-completed-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-completed-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-blocked-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-blocked-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-blocked-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-blocked-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-failed-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-failed-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-failed-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-failed-02-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-cancelled-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-cancelled-01-UI_TEST.png"
+    },
+    {
+      "id": "A05-task-cancelled-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A05-task-cancelled-02-UI_TEST.png"
+    },
+    {
+      "id": "A08-companion-device-tab-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A08-companion-device-tab-01-UI_TEST.png"
+    },
+    {
+      "id": "A08-companion-device-tab-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A08-companion-device-tab-02-UI_TEST.png"
+    },
+    {
+      "id": "A09-coordinate-calibration-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A09-coordinate-calibration-01-UI_TEST.png"
+    },
+    {
+      "id": "A09-coordinate-calibration-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A09-coordinate-calibration-02-UI_TEST.png"
+    },
+    {
+      "id": "A10-camera-closed-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A10-camera-closed-01-UI_TEST.png"
+    },
+    {
+      "id": "A11-synthetic-camera-live-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A11-synthetic-camera-live-01-UI_TEST.png"
+    },
+    {
+      "id": "A11-synthetic-camera-live-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A11-synthetic-camera-live-02-UI_TEST.png"
+    },
+    {
+      "id": "A12-synthetic-camera-two-corners",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A12-synthetic-camera-two-corners-UI_TEST.png",
+      "note": "Synthetic image and synthetic state; no CameraManager or HID sender was used"
+    },
+    {
+      "id": "A12-synthetic-camera-reopened",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A12-synthetic-camera-reopened-UI_TEST.png",
+      "note": "Regression: previous two-corner draft must disappear after closing/reopening"
+    },
+    {
+      "id": "A14-ai-settings-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A14-ai-settings-01-UI_TEST.png"
+    },
+    {
+      "id": "A14-ai-settings-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A14-ai-settings-02-UI_TEST.png"
+    },
+    {
+      "id": "A16-mqtt-expanded-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A16-mqtt-expanded-01-UI_TEST.png"
+    },
+    {
+      "id": "A16-mqtt-expanded-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A16-mqtt-expanded-02-UI_TEST.png"
+    },
+    {
+      "id": "A17-diagnostics-expanded-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A17-diagnostics-expanded-01-UI_TEST.png"
+    },
+    {
+      "id": "A17-diagnostics-expanded-02",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A17-diagnostics-expanded-02-UI_TEST.png"
+    },
+    {
+      "id": "A18-website-tab-01",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "A18-website-tab-01-UI_TEST.png"
+    },
+    {
+      "id": "D01-dark-home",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "D01-dark-home-UI_TEST.png"
+    },
+    {
+      "id": "D02-dark-keyboard",
+      "status": "captured",
+      "fixture": true,
+      "method": "a_portraitPagesAndDialogs",
+      "file": "D02-dark-keyboard-UI_TEST.png"
+    },
+    {
+      "id": "C05-home-landscape",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "C05-home-landscape-UI_TEST.png",
+      "note": "Actual landscape Activity; no requested-orientation restoration claim is made"
+    },
+    {
+      "id": "C05-home-landscape-after-scroll",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "C05-home-landscape-after-scroll-UI_TEST.png",
+      "note": "Every one of the eight module cards was individually scrolled into view and checked"
+    },
+    {
+      "id": "M06-landscape-keyboard",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "M06-landscape-keyboard-UI_TEST.png",
+      "note": "Actual audit Activity in landscape; report callbacks are inert"
+    },
+    {
+      "id": "M16-xbox",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "M16-xbox-UI_TEST.png"
+    },
+    {
+      "id": "M17-fc",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "M17-fc-UI_TEST.png"
+    },
+    {
+      "id": "M09-tv-landscape",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "M09-tv-landscape-UI_TEST.png"
+    },
+    {
+      "id": "M13-advanced-landscape",
+      "status": "captured",
+      "fixture": true,
+      "method": "b_landscapePages",
+      "file": "M13-advanced-landscape-UI_TEST.png"
+    },
+    {
+      "id": "A19-website-activity",
+      "status": "captured",
+      "fixture": true,
+      "method": "c_websiteActivityDefault",
+      "file": "A19-website-activity-UI_TEST.png",
+      "note": "Actual website Activity using an invalid example origin; no scan/bind/network request"
+    },
+    {
+      "id": "not-covered",
+      "status": "limitations",
+      "fixture": true,
+      "method": "c_websiteActivityDefault",
+      "note": "System permission dialogs, real Bluetooth/pairing, voice service, camera optics/five-point calibration, model responses, website transaction states, update transfer/install, receiver helper and browser pages require separate execution; this suite is UI fixtures only"
+    }
+  ]
+}

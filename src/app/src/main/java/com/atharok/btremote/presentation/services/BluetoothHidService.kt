@@ -1,0 +1,233 @@
+// AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md.
+package com.atharok.btremote.presentation.services
+
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.Service
+import android.bluetooth.BluetoothProfile.STATE_CONNECTED
+import android.bluetooth.BluetoothProfile.STATE_DISCONNECTED
+import android.content.Context
+import android.content.Intent
+import android.os.Binder
+import android.os.IBinder
+import android.widget.RemoteViews
+import androidx.core.app.NotificationCompat
+import androidx.glance.appwidget.updateAll
+import com.atharok.btremote.R
+import com.atharok.btremote.common.utils.NOTIFICATION_CHANNEL_ID
+import com.atharok.btremote.common.utils.NOTIFICATION_ID
+import com.atharok.btremote.domain.usecases.BluetoothHidServiceUseCase
+import com.atharok.btremote.presentation.activities.MainActivity
+import com.atharok.btremote.presentation.glance.MediaControlWidget
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_BACK
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_DISCONNECT
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_DOWN
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_HOME
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_LEFT
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_MULTIMEDIA_NEXT
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_MULTIMEDIA_PLAY_PAUSE
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_MULTIMEDIA_PREVIOUS
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_PICK
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_RIGHT
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_UP
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_VOLUME_DOWN
+import com.atharok.btremote.presentation.services.NotificationBroadcastReceiver.Companion.ACTION_VOLUME_UP
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
+
+class BluetoothHidService : Service() {
+    private val useCase: BluetoothHidServiceUseCase by inject()
+    private lateinit var notificationManager: NotificationManager
+    private var job: Job? = null
+    private var currentConnectionState = STATE_DISCONNECTED
+    private var profileStarted = false
+
+    override fun onCreate() {
+        super.onCreate()
+        createNotificationChannel()
+
+        job = CoroutineScope(Dispatchers.Main).launch {
+            useCase.getDeviceHidConnectionState().collect {
+                when(it.state) {
+                    STATE_CONNECTED -> {
+                        if(currentConnectionState != STATE_CONNECTED) {
+                            updateNotificationForConnectedState(
+                                deviceName = it.deviceName,
+                                showRemoteButtonsInNotification = useCase.showRemoteButtonsInNotification().first()
+                            )
+                            currentConnectionState = STATE_CONNECTED
+                        }
+                        MediaControlWidget().updateAll(this@BluetoothHidService)
+                    }
+                    STATE_DISCONNECTED -> {
+                        if(currentConnectionState != STATE_DISCONNECTED) {
+                            updateNotificationForDisconnectedState()
+                            currentConnectionState = STATE_DISCONNECTED
+                        }
+                        MediaControlWidget().updateAll(this@BluetoothHidService)
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        stopBluetoothHidProfile()
+        super.onDestroy()
+    }
+
+    override fun onTaskRemoved(rootIntent: Intent?) {
+        stopSelf()
+        super.onTaskRemoved(rootIntent)
+    }
+
+    override fun onBind(intent: Intent?): IBinder = Binder()
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        try {
+            startForeground(NOTIFICATION_ID, createNotification())
+            if (!profileStarted) {
+                startBluetoothHidProfile()
+                profileStarted = true
+            }
+        } catch (exception: Exception) {
+            stopSelf()
+        }
+
+        return super.onStartCommand(intent, flags, startId)
+    }
+
+    // ---- Notification ----
+
+    private fun createNotificationChannel() {
+        notificationManager = getSystemService(NotificationManager::class.java)
+        val channel = NotificationChannel(
+            NOTIFICATION_CHANNEL_ID,
+            getString(R.string.notification_channel_name),
+            NotificationManager.IMPORTANCE_LOW
+        )
+        channel.enableVibration(false)
+        notificationManager.createNotificationChannel(channel)
+    }
+
+    private fun createNotification(): Notification {
+        return NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID).apply {
+            setSmallIcon(R.drawable.notification_icon)
+            setContentTitle(getString(R.string.connected_off))
+            setOngoing(true)
+            //.setContentIntent(createOpenApplicationPendingIntent())
+            setStyle(NotificationCompat.DecoratedCustomViewStyle())
+            addAction(
+                NotificationCompat.Action.Builder(
+                    R.drawable.round_launch_24,
+                    getString(R.string.open),
+                    createOpenApplicationPendingIntent()
+                ).build()
+            )
+            setPriority(NotificationCompat.PRIORITY_MIN)
+            setVibrate(longArrayOf(0))
+        }.build()
+    }
+
+    private fun updateNotificationForConnectedState(
+        deviceName: String,
+        showRemoteButtonsInNotification: Boolean
+    ) {
+        val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID).apply {
+            setSmallIcon(R.drawable.notification_icon)
+            if(showRemoteButtonsInNotification) {
+                setContentText(getString(R.string.connected_on, deviceName))
+                setCustomBigContentView(configureRemoteViews())
+            } else {
+                setContentTitle(getString(R.string.connected_on, deviceName))
+            }
+            setOngoing(true)
+            //setContentIntent(createOpenApplicationPendingIntent())
+            setStyle(NotificationCompat.DecoratedCustomViewStyle())
+            addAction(
+                NotificationCompat.Action.Builder(
+                    R.drawable.round_launch_24,
+                    getString(R.string.open),
+                    createOpenApplicationPendingIntent()
+                ).build()
+            )
+            addAction(
+                NotificationCompat.Action.Builder(
+                    R.drawable.round_link_off_24,
+                    getString(R.string.disconnect),
+                    createPendingIntent(ACTION_DISCONNECT)
+                ).build()
+            )
+            setPriority(NotificationCompat.PRIORITY_MIN)
+            setVibrate(longArrayOf(0))
+        }.build()
+
+        notificationManager.notify(NOTIFICATION_ID, notification)
+    }
+
+    private fun updateNotificationForDisconnectedState() {
+        val notification = createNotification()
+        notificationManager.notify(NOTIFICATION_ID, notification)
+    }
+
+    private fun configureRemoteViews(): RemoteViews {
+        return RemoteViews(packageName, R.layout.notification_large_layout).apply {
+            this.setOnClickPendingIntent(R.id.notification_large_layout_volume_inc, createPendingIntent(ACTION_VOLUME_UP))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_volume_dec, createPendingIntent(ACTION_VOLUME_DOWN))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_play_pause, createPendingIntent(ACTION_MULTIMEDIA_PLAY_PAUSE))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_previous, createPendingIntent(ACTION_MULTIMEDIA_PREVIOUS))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_next, createPendingIntent(ACTION_MULTIMEDIA_NEXT))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_left, createPendingIntent(ACTION_LEFT))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_right, createPendingIntent(ACTION_RIGHT))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_up, createPendingIntent(ACTION_UP))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_down, createPendingIntent(ACTION_DOWN))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_pick, createPendingIntent(ACTION_PICK))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_back, createPendingIntent(ACTION_BACK))
+            this.setOnClickPendingIntent(R.id.notification_large_layout_home, createPendingIntent(ACTION_HOME))
+        }
+    }
+
+    private fun createPendingIntent(action: String): PendingIntent {
+        val intent = Intent(this, NotificationBroadcastReceiver::class.java).apply {
+            this.setAction(action)
+        }
+        return PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_IMMUTABLE)
+    }
+
+    private fun createOpenApplicationPendingIntent(): PendingIntent {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        return PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE)
+    }
+
+    // ---- Bluetooth HID Profile ----
+
+    private fun startBluetoothHidProfile() {
+        useCase.startHidProfile()
+    }
+
+    private fun stopBluetoothHidProfile() {
+        job?.cancel()
+        job = null
+        useCase.stopHidProfile()
+    }
+
+    companion object {
+        fun start(context: Context) {
+            val serviceIntent = Intent(context, BluetoothHidService::class.java)
+            context.startForegroundService(serviceIntent)
+        }
+
+        fun stop(context: Context) {
+            val serviceIntent = Intent(context, BluetoothHidService::class.java)
+            context.stopService(serviceIntent)
+        }
+    }
+}

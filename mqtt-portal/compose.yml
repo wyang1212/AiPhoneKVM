@@ -1,0 +1,34 @@
+# AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md.
+services:
+  portal:
+    build: .
+    image: aiphonekvm-portal:20261027-qr
+    container_name: aiphonekvm-portal
+    network_mode: host
+    user: "10001:10001"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    environment:
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-https://controller.example.invalid}
+      PUBLIC_MQTT_URI: ${PUBLIC_MQTT_URI:-ssl://mqtt.example.invalid:8883}
+      APK_DOWNLOAD_URL: ${APK_DOWNLOAD_URL-https://downloads.example.invalid/}
+      ANDROID_PACKAGE: ${ANDROID_PACKAGE:-vip.wyang.aiphonekvm.debug}
+      DATA_DIR: /data
+      BROKER_CONFIG: /run/portal/broker.json
+    volumes:
+      - ./data:/data
+      - ./secrets:/run/portal:ro
+    mem_limit: 384m
+    cpus: 1
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"

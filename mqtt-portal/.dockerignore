@@ -1,0 +1,17 @@
+data
+secrets
+.env
+.env.*
+*.pem
+*.key
+backups
+.bootstrap
+*.sqlite3*
+__pycache__
+.pytest_cache
+test_*.py
+*.sqlite3*
+*.json
+.git
+
+!static/assetlinks.json

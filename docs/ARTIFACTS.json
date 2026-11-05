@@ -1,0 +1,16 @@
+{
+  "version": "2.9.4",
+  "versionCode": 36,
+  "artifacts": [
+    {
+      "file": "AiPhoneKVM-Capture-2.9.4-android.apk",
+      "bytes": 4267270,
+      "sha256": "5bcb4a3e1d3d1a7adcdb4e3c5a7786de7eccceab58ac7e62193613a3c3e5667c"
+    },
+    {
+      "file": "AiPhoneKVM-2.9.4-android.apk",
+      "bytes": 77028330,
+      "sha256": "acf84923c8aa46df18d3042a93682dcfd37527f6c3600c7d839ca75dd61350ef"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Eclipse Paho MQTT Java 1.2.5
+https://github.com/eclipse-paho/paho.mqtt.java/tree/v1.2.5
+Eclipse Foundation and Paho contributors; original notices retained in Paho-about.html.
+The upstream distribution offers EPL-2.0 or EDL-1.0. This distribution uses the
+Eclipse Distribution License 1.0 option. See Eclipse-Distribution-License-1.0.txt.
+Used unchanged as a Maven dependency; no Paho library code is modified here.

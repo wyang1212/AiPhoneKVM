@@ -1,0 +1,30 @@
+# Build output and local tooling
+.gradle/
+.kotlin/
+.build/
+build/
+.idea/
+__pycache__/
+.pytest_cache/
+.venv*/
+venv/
+/evidence/
+/downloads/
+local.properties
+*.iml
+.DS_Store
+
+# Credentials and delivery artifacts
+.env
+.env.*
+!.env.example
+!.env.sample
+*.jks
+*.keystore
+*.pem
+*.key
+*.apk
+*.aab
+*.apks
+*.xapk
+*.log

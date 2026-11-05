@@ -1,0 +1,32 @@
+# AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md.
+http:
+  routers:
+    aiphonekvm-portal:
+      rule: "Host(`controller.example.invalid`)"
+      entryPoints:
+        - websecure
+      service: aiphonekvm-portal
+      middlewares:
+        - aiphonekvm-body-limit
+      tls:
+        certResolver: letsencrypt
+    aiphonekvm-portal-http:
+      rule: "Host(`controller.example.invalid`)"
+      entryPoints:
+        - web
+      service: aiphonekvm-portal
+      middlewares:
+        - aiphonekvm-https
+  middlewares:
+    aiphonekvm-https:
+      redirectScheme:
+        scheme: https
+        permanent: true
+    aiphonekvm-body-limit:
+      buffering:
+        maxRequestBodyBytes: 8192
+  services:
+    aiphonekvm-portal:
+      loadBalancer:
+        servers:
+          - url: http://127.0.0.1:18094

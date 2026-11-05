@@ -1,0 +1,4 @@
+<!-- AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md. -->
+<resources>
+    <string name="enhanced_control_description">在你开启屏幕共享并连接配对主控端期间，按主控端指令执行点击、触屏滑动，并向当前聚焦输入框写入文字。用于避免输入法改写中文、数字和混合文本。只检查当前输入框以核对写入，不上传控件树，不修改默认输入法。停止屏幕共享即停止接收增强操作。</string>
+</resources>

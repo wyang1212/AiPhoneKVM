@@ -1,0 +1,20 @@
+AiPhoneKVM screenshot helper — GNU GPL version 3.
+Corresponding source: https://github.com/wyang1212/AiPhoneKVM
+
+Unchanged runtime dependencies:
+OkHttp / okhttp-android 5.3.2 — Square and contributors; Apache-2.0.
+https://github.com/square/okhttp/tree/parent-5.3.2
+Okio / okio-jvm 3.16.4 — Square and contributors; Apache-2.0.
+https://github.com/square/okio/tree/parent-3.16.4
+Kotlin standard library 2.4.0 and JetBrains annotations — JetBrains and
+contributors; Apache-2.0. https://github.com/JetBrains/kotlin
+AndroidX annotations 1.9.1 and startup/tracing — Android Open Source Project
+and contributors; Apache-2.0. https://github.com/androidx/androidx
+
+GPL-3.0.txt and Apache-2.0.txt are bundled with this application.
+DEPENDENCIES.json enumerates its resolved runtime dependency graph.
+The helper, enrollment and enhanced-input application code was added for
+AiPhoneKVM. Third-party libraries are used unchanged and keep their licenses.
+The controller application derives from Atharok/BtRemote and
+jqssun/android-bt-remote; see the source distribution NOTICE.md and
+THIRD_PARTY_NOTICES.md for their retained attribution and all component details.

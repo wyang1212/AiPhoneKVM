@@ -1,0 +1,509 @@
+{
+  "format": "image/jpeg",
+  "capture_method": "CUA screenshot API, saved without image editing",
+  "environment": "UI_TEST: original frontend HTML/JS/CSS plus loopback mock API; original WebConsole HTML extracted from Kotlin",
+  "browser": "Edge via CUA; iab unavailable in delegated session",
+  "layout_scope": "Desktop browser viewport; long LAN page captured by scrolling",
+  "physical_validation": false,
+  "screenshots": [
+    {
+      "id": "L01",
+      "file": "L01-lan-initial-UI_TEST.jpg",
+      "coverage": "原局域网控制台初始页",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "50c053b9bd0ff7f5397f8d4be98556b756b68ee30ab096cfe0acf1dac8dd293a",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L02",
+      "file": "L02-lan-connected-UI_TEST.jpg",
+      "coverage": "局域网读取合成状态（physicalValidation=false）",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "efc627dad966aee8034b2a874f1c45f5628aa1c5ec3be8973f729a79901b820f",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L03",
+      "file": "L03-lan-task-running-UI_TEST.jpg",
+      "coverage": "局域网模拟运行与操作互斥",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "9f240d215785ab6ce23fc235f5b02383a3868b1702554ec52768e0969ed78ecf",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L04",
+      "file": "L04-lan-task-stopped-UI_TEST.jpg",
+      "coverage": "局域网模拟任务已停止",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "d73e9453e51b0539c077b35ba7f3161f839d7ba45f383feb2153141b50e1aa7f",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L05",
+      "file": "L05-lan-command-UI_TEST.jpg",
+      "coverage": "默认STATUS命令与明确未执行的合成响应",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "9cefc34e965b054565f65ad73c184c764df767ae10b6952e27c867d6438089d8",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L06",
+      "file": "L06-lan-synthetic-frame-UI_TEST.jpg",
+      "coverage": "原画面区展示UI TEST合成SVG（不是手机截图）",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "f7cd79eb7dba1d3ea6b8ba5729cf4108baddb0eee1f07e32eceafdd7b599b8c0",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L07",
+      "file": "L07-lan-settings-UI_TEST.jpg",
+      "coverage": "备用尺寸、HID比例、无效MQTT示例和CA入口",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "f0caa69daf6a16d654605c41868bee419aba4ea7be8fc88509256a65dd35f13a",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "L08",
+      "file": "L08-lan-logs-UI_TEST.jpg",
+      "coverage": "设置下部、CA、保存入口、合成记录及许可说明",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "72b3309a0d99b712f5c4f482c727f9e3872b1ed6990f4ec1e8b0fa7ba1f25a54",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W01",
+      "file": "W01-login-UI_TEST.jpg",
+      "coverage": "登录标签与登录表单",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "bb9969a3ab808346301d49899f62e1aa979ce24a62fc57904eca2a338fed326d",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W02",
+      "file": "W02-register-UI_TEST.jpg",
+      "coverage": "注册标签与确认密码",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "f864958bfd1a0406a264a405f3731df101a9befd1b9ff0b96af1adbd4b3545f9",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W03",
+      "file": "W03-empty-UI_TEST.jpg",
+      "coverage": "已登录设备空态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "bfe8e7b5e09afa4186004946feed00921c37fd3517c3af28f4202e7ce18faaff",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W04",
+      "file": "W04-pair-UI_TEST.jpg",
+      "coverage": "扫码添加：等待手机扫码",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "84b0550f8c05724c8f466f668a27effedbc65cb9998e65c2f8b3f86eb9cb14a8",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W05",
+      "file": "W05-pair-advanced-UI_TEST.jpg",
+      "coverage": "扫码高级设置与手动入口",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "8ef8027acff9ba59061781f8ddbd3c0bcf92b01ad871b4207c13c6e55e8c45b3",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W06",
+      "file": "W06-online-UI_TEST.jpg",
+      "coverage": "已登录且真实可见的在线示例设备",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "a4efd805e9bc35206f16cb93de05529a2be1cfeec8ff7799c3f9089c00abb36a",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W07",
+      "file": "W07-manual-device-UI_TEST.jpg",
+      "coverage": "手动添加示例表单（显示无效密码）",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "9276b6247246d557f375c39717ea523fec04f8990753b22312aba6a1d58ae8d0",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W08",
+      "file": "W08-connection-UI_TEST.jpg",
+      "coverage": "连接参数弹窗（example.invalid和无效凭据）",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "34fe1deae637427f68fc5c668c6b3c511c3d5eebc75f38d2fa8af8cae68e7019",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W09",
+      "file": "W09-guide-UI_TEST.jpg",
+      "coverage": "连接指南弹窗",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "e4818328904e6f5e549ddeec8f22e3f6da39524b5a5ad49c2d161e5ef3f7252d",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W10",
+      "file": "W10-device-advanced-UI_TEST.jpg",
+      "coverage": "修复后刷新仍保留高级设置展开",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "43ad7cc44625482819ab2cebb47cd71e55eb6f65ecf55314fe29e7407dec9e45",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W11",
+      "file": "W11-password-UI_TEST.jpg",
+      "coverage": "MQTT密码表单（无效示例，取消）",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1146
+      ],
+      "sha256": "204470f6840ac89237eace7ce8e6801c1bfae3c13485cc949ac0275e220ecafb",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W12",
+      "file": "W12-offline-UI_TEST.jpg",
+      "coverage": "离线示例设备与操作禁用",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "275897547c1210d385389372e47f7da46b60e1d5f52592dc1927b8eb824724a3",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W13",
+      "file": "W13-ai-running-UI_TEST.jpg",
+      "coverage": "AI模拟运行中",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "1aae563bf89ac69fe35d04c2a10524a8cdf1fc7e86134c03d35db015921948c1",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W14",
+      "file": "W14-ai-stopped-UI_TEST.jpg",
+      "coverage": "AI模拟停止结果",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "fb6656ed7e1114b4bb1231667ec86c7c966bfa3a77e5a4f586ed7eaa85b18a3b",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W15",
+      "file": "W15-ai-completed-UI_TEST.jpg",
+      "coverage": "AI模拟完成状态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "d760eef82991a5e34bc55e7b66453c332a4560b44427f4e9ad90078e3f90d4d9",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W16",
+      "file": "W16-ai-blocked-UI_TEST.jpg",
+      "coverage": "AI模拟需要处理状态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "b9db271ba6675db86f24d516ab4f48ac7d6459c5e74d73b735850acc63a42ed9",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W17",
+      "file": "W17-ai-failed-UI_TEST.jpg",
+      "coverage": "AI模拟失败状态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "38d74eb608b75644e1557c0042ecc35684608f5ef85b75c0cd7f9f83561dbec2",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W18",
+      "file": "W18-broker-warning-UI_TEST.jpg",
+      "coverage": "消息服务重连提示",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "de8eac37d0f894fb1e1290052b268807a6a70e0d95c51908b04985f1ffbcdc6a",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W19",
+      "file": "W19-no-model-UI_TEST.jpg",
+      "coverage": "未配置AI模型提示",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "498f403de1ffed3131ed4ac7bfe9690946d473e293fa05744aeae81712508c88",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W20",
+      "file": "W20-no-bluetooth-UI_TEST.jpg",
+      "coverage": "未连接被控端提示",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "d2c4c22b6eb28c4cafccc97a496a721808a5872de137b3651a9469d51543326d",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W21",
+      "file": "W21-old-client-UI_TEST.jpg",
+      "coverage": "旧主控端升级提示",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "52cccab81cae196d2ce9370b6a8ee821dc50285f818a286ae6205f636077dcea",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W22",
+      "file": "W22-pair-scanned-UI_TEST.jpg",
+      "coverage": "二维码扫码后待确认的合成状态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "2249d80255209a28dd6b7b6ce506719393ea5b19f15b807a4f8be45259cc63e1",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W23",
+      "file": "W23-pair-configuring-UI_TEST.jpg",
+      "coverage": "二维码配置中的合成状态",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "5e91fd194f296f3831f0f18a1cae45eb0c2f8ce2b4151a0893105da25f7508cc",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W24",
+      "file": "W24-pair-expired-UI_TEST.jpg",
+      "coverage": "二维码过期与刷新入口",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "34406e6e6a9c82750122a7cd80fc865748125f0df900657d71f303d4eddf419f",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W25",
+      "file": "W25-pair-cancelled-UI_TEST.jpg",
+      "coverage": "配对取消提示",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "c855e62454e2ac99a81fc3417a051ebcf878b2c07c6fa9444e28a1ca48e39ca9",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W26",
+      "file": "W26-pair-landing-UI_TEST.jpg",
+      "coverage": "配对落地页与App/下载入口",
+      "mime_type": "image/jpeg",
+      "size": [
+        1315,
+        1115
+      ],
+      "sha256": "3007d9ab530653a1d774d0c2280751ce5f88c5f1c6af5a53f8bc68b3f8603e20",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W27",
+      "file": "W27-pair-invalid-UI_TEST.jpg",
+      "coverage": "失效绑定链接与App入口隐藏",
+      "mime_type": "image/jpeg",
+      "size": [
+        1315,
+        1115
+      ],
+      "sha256": "005e42036c821725901120d836c8061badcea6225e7dcedab26628c7a80294e7",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W28",
+      "file": "W28-register-mismatch-UI_TEST.jpg",
+      "coverage": "真实前端确认密码不一致校验",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "45c84aa91fd78d3977b9577c9559c6d13b3a9243849f346b57a2822a98aa0224",
+      "fixture": true,
+      "physical_validation": false
+    },
+    {
+      "id": "W29",
+      "file": "W29-logout-UI_TEST.jpg",
+      "coverage": "退出后登录页与设备DOM清空",
+      "mime_type": "image/jpeg",
+      "size": [
+        1301,
+        1103
+      ],
+      "sha256": "e0bac64da6930740f78a68ab690108f0ded3275507470d8e4717055f8894738a",
+      "fixture": true,
+      "physical_validation": false
+    }
+  ],
+  "gaps": [
+    "Native browser rename/disable/remove prompt/confirm layers cannot be captured by the CUA tab screenshot API. A rename prompt was observed; the agent-created tab was closed after the CUA focus API stalled. No synthetic dialog image substitutes are provided.",
+    "No live production backend, real pairing, broker, model or phone operation was performed.",
+    "Mobile viewport and physical Android screens are tracked separately."
+  ],
+  "ui_regression": {
+    "problem": "Five-second device refresh collapsed an expanded advanced section",
+    "fix": "Preserve details.open while refreshing device controls",
+    "evidence": "test_refresh_frontend.cjs fails before the fix, passes after the fix; all six real-frontend Node regression scripts pass; W10 captured after manual Refresh with advanced section still expanded"
+  },
+  "source_sha256": {
+    "mqtt-portal/static/index.html": "80ee7b5626af70984a08ffcff96c1ec4f71068938f8cce953477067f27de6ee8",
+    "mqtt-portal/static/pair.html": "0151f1d4fa328332cf5611870a64b732a48f61d0a5bfed67e7d2cdbd748765a8",
+    "mqtt-portal/static/app.js": "f6390ec1db9d879167177f50f00b22c5bf14d8e94404832bd527a116e16ba6fd",
+    "mqtt-portal/static/pair.js": "f890c7cf35c655537aaac374d59c36aa3202d86cf53aef3b8640ade348b75d76",
+    "mqtt-portal/static/style.css": "e11af82f9213c065e38ef292b869fcbea191444da1dc8f239a68cbbae48a32b3",
+    "src/app/src/main/java/com/atharok/btremote/automation/WebConsole.kt": "b4c6744f54ada94795d6e4dee5f36542cdfdcb53cbf73082f850cfd9e7742db6"
+  }
+}

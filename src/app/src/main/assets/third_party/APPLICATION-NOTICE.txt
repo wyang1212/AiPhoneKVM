@@ -1,0 +1,35 @@
+AiPhoneKVM — modified application, GNU General Public License version 3.
+Complete corresponding source: https://github.com/wyang1212/AiPhoneKVM
+
+SOURCE DERIVATION
+Atharok / BT Remote: https://gitlab.com/Atharok/BtRemote — GPL version 3.
+jqssun / android-bt-remote: https://github.com/jqssun/android-bt-remote — GPL version 3.
+Original authors and contributors retain their rights. This is an independently
+modified application, not an official upstream release. Changes through 2026-11-05
+include automation, screen sharing, optional enhanced input, HTTP/MQTT, vision
+provider configuration, enrollment, camera observation, goal loops, voice drafts,
+controller/home layouts, colored keyboards and device management.
+BlueHIDFlow by antgroup: protocol/workflow reference, Apache-2.0.
+https://github.com/antgroup/BlueHIDFlow — no ESP32 firmware distributed.
+
+UNCHANGED RUNTIME LIBRARIES
+Reorderable 3.1.0 — Calvin Liang and contributors, Apache-2.0.
+ZXing Android Embedded 4.3.0 / ZXing core 3.4.1 — JourneyApps/ZXing contributors,
+Apache-2.0. Eclipse Paho Java 1.2.5 — Eclipse/Paho contributors, EDL-1.0 chosen
+from the upstream EPL-2.0 / EDL-1.0 options. NanoHTTPD 2.3.1 — NanoHTTPD
+contributors, BSD-3-Clause. AndroidX/Jetpack/Compose/Material icons — Android
+Open Source Project and contributors, Apache-2.0, except the relocated Protocol
+Buffers runtimes: datastore-preferences-external-protobuf 1.2.1 and
+glance-appwidget-external-protobuf 1.1.1 are BSD-3-Clause, by Google/Protobuf
+contributors. See AndroidX-Protobuf-LICENSE.txt and Protobuf-LICENSE.txt.
+Kotlin 2.4.0, coroutines 1.9.0,
+serialization 1.11.0 and annotations — JetBrains/contributors, Apache-2.0.
+Koin 4.2.1 / Stately 2.1.0 — Koin/Touchlab contributors, Apache-2.0.
+Okio 3.9.1 — Square and contributors, Apache-2.0.
+JSpecify / Guava ListenableFuture — upstream contributors, Apache-2.0.
+
+License copies and original notices are in this assets/third_party directory.
+DEPENDENCIES.json lists resolved runtime coordinates and platform constraints.
+Full component inventory and server dependencies are in THIRD_PARTY_NOTICES.md
+in the corresponding source distribution. Other libraries keep their licenses;
+this notice does not relicense all dependencies as GPL or claim sole authorship.

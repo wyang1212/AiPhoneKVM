@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Information for Translators.
+        The "app_name" field corresponds to the name of the application as it appears in the Launcher.
+        You are free to translate it if it is relevant in your language.
+        However, this is optional, and you can retain the term "BT Remote".
+        If you choose to translate it, ensure that the name is 11 characters or fewer if possible.
+        If the text exceeds 11 characters, it's not a problem, but it may not display entirely in all launchers.
+    -->
+    <string name="app_name">AiPhoneKVM</string>
+    <string name="close">Закрыть</string>
+    <string name="error">Ошибка</string>
+    <!-- Bluetooth Support -->
+    <string name="bluetooth_not_supported_message">Ваше устройство не поддерживает Bluetooth.</string>
+    <!-- Bluetooth Permission -->
+    <string name="permission">Разрешение</string>
+    <string name="bluetooth_permission_not_granted">Разрешение отменено</string>
+    <string name="bluetooth_permission_message">Вы должны разрешить доступ к Bluetooth.</string>
+    <string name="bluetooth_permission_button">Авторизовать</string>
+    <string name="bluetooth_permission_denied_message">Вы запретили доступ к Bluetooth.</string>
+    <!-- Bluetooth Activation -->
+    <string name="activation">Активация</string>
+    <string name="bluetooth_disabled_info">Bluetooth отключён</string>
+    <string name="bluetooth_disabled_message">Для подключения к удаленному устройству на вашем устройстве должен быть включен Bluetooth.</string>
+    <!-- Bluetooth Bonded Devices -->
+    <string name="bluetooth_enabled_button">Включить Bluetooth</string>
+    <string name="devices">Устройства</string>
+    <!-- Bluetooth Pairing -->
+    <string name="paired_devices">Сопряжённые устройства</string>
+    <string name="pairing_a_device">Сопряжение устройства</string>
+    <string name="available_devices">Доступные устройства</string>
+    <string name="bluetooth_pairing_device_not_found">Ни одно устройство не обнаружено.</string>
+    <!-- Bluetooth Connecting -->
+    <string name="refresh">Обновить</string>
+    <string name="connection">Соединение</string>
+    <string name="bluetooth_device_connecting_message">Попытка подключения к устройству \"%1$s\"…</string>
+    <string name="bluetooth_device_disconnecting_message">Отключение «%1$s»…</string>
+    <string name="bluetooth_failed_to_register_app_message">Невозможность зарегистрировать приложение. Убедитесь, что никакая другая служба Bluetooth не работает в фоновом режиме. Если ошибка не устранена, возможно, процесс Bluetooth был неожиданно прерван. Чтобы решить эту проблему, отключите Bluetooth на своем устройстве, а затем снова включите его.</string>
+    <string name="bluetooth_failed_to_connect_to_device">Попытка подключения к удаленному устройству не удалась.</string>
+    <string name="bluetooth_failed_try_again">Попробуйте ещё раз.</string>
+    <!-- Remote Screen -->
+    <string name="remote">Удалённый</string>
+    <string name="more">Подробнее</string>
+    <string name="disconnect">Разъединить</string>
+    <string name="direction_arrows">Стрелки направления</string>
+    <!-- Settings -->
+    <string name="settings">Настройки</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="theme">Тема</string>
+    <string name="theme_system">Как в системе</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_black">Настоящий чёрный цвет для тёмной темы</string>
+    <string name="theme_black_oled_info">Использует меньше энергии на OLED-экранах</string>
+    <string name="dynamic_colors">Динамические цвета</string>
+    <string name="mouse_pointer_speed">Скорость указателя</string>
+    <string name="invert_mouse_scrolling_direction">Инвертировать направление прокрутки</string>
+    <string name="keyboard_and_input_field">Клавиатура и поле ввода</string>
+    <string name="clear_input_field">Очистить поле ввода после отправки текста</string>
+    <string name="about">О приложении</string>
+    <string name="language">Язык</string>
+    <string name="third_party_library">Сторонние библиотеки</string>
+    <string name="website">Сайт</string>
+    <string name="source_code">Исходный код</string>
+    <!-- Keyboard -->
+    <string name="keyboard">Клавиатура</string>
+    <string name="keyboard_language">Язык клавиатуры</string>
+    <string name="keyboard_language_info">Убедитесь, что выбранный язык клавиатуры соответствует языку, настроенному на удаленном устройстве.</string>
+    <string name="keyboard_english_us">Английский (Соединенные Штаты)</string>
+    <string name="keyboard_english_uk">Английский (Великобритания)</string>
+    <string name="keyboard_spanish">Испанский</string>
+    <string name="keyboard_french">Французский</string>
+    <string name="keyboard_german">Немецкий</string>
+    <string name="keyboard_russian">Русский</string>
+    <string name="keyboard_czech">Чешский</string>
+    <string name="send">Отправить</string>
+    <string name="enter">Войти</string>
+    <string name="escape">Выйти</string>
+    <string name="delete">Удалить</string>
+    <!-- Remote button description -->
+    <string name="pick">Выбрать</string>
+    <string name="up">Вверх</string>
+    <string name="down">Вниз</string>
+    <string name="left">Влево</string>
+    <string name="right">Вправо</string>
+    <string name="play">Играть</string>
+    <string name="pause">Пауза</string>
+    <string name="previous">Предыдущий</string>
+    <string name="next">Следующий</string>
+    <string name="mute">Заглушить</string>
+    <string name="home">Домой</string>
+    <string name="back">Назад</string>
+    <string name="standby">В режим ожидания</string>
+    <string name="next_channel">Следующий канал</string>
+    <string name="previous_channel">Предыдущий канал</string>
+    <!-- Mouse -->
+    <string name="mouse">Мышь</string>
+    <string name="mouse_click_left">Левая кнопка мыши</string>
+    <string name="mouse_click_right">Правая кнопка мыши</string>
+    <string name="mouse_click_middle">Средняя кнопка мыши</string>
+    <string name="mouse_wheel_up">Проведите пальцем вверх</string>
+    <string name="mouse_wheel_down">Проведите пальцем вниз</string>
+    <string name="mouse_pad_tap">Нажмите</string>
+    <!-- Notification -->
+    <string name="notification_channel_name">Соединение Bluetooth HID</string>
+    <string name="connected_on">Подключено на %1$s</string>
+    <!-- Help messages -->
+    <string name="help">Помощь</string>
+    <string name="help_select_device_from_list">Выберите устройство, к которому вы хотите подключиться, из списка сопряжённых устройств.</string>
+    <string name="help_missing_device_title">Отсутствует устройство</string>
+    <string name="help_missing_device_message">Если удалённое устройство не отображается в списке сопряжённых устройств, необходимо выполнить его сопряжение, нажав на значок в верхней панели.</string>
+    <string name="help_device_failed_connection_title">Сбой подключения</string>
+    <string name="help_device_failed_connection_message_1">Если вы не можете подключиться к удалённому устройству, следуйте приведенным ниже инструкциям:</string>
+    <string name="help_device_failed_connection_check_1">• Убедитесь, что удалённое устройство работает на Android или Android TV.</string>
+    <string name="help_device_failed_connection_check_2">• Убедитесь, что на удалённом устройстве включена функция Bluetooth.</string>
+    <string name="help_device_failed_connection_check_3">• Убедитесь, что оба устройства находятся достаточно близко друг к другу.</string>
+    <string name="help_device_failed_connection_check_4">• Попробуйте подключиться несколько раз.</string>
+    <string name="help_device_failed_connection_message_2">Если, несмотря на эти проверки, вы по-прежнему не можете подключиться к удалённому устройству, выполните следующие действия:</string>
+    <string name="help_device_failed_connection_check_5">• Разорвите сопряжение двух устройств как на текущем, так и на удалённом устройстве.</string>
+    <string name="help_device_failed_connection_check_6">• Выполните повторное сопряжение двух устройств, нажав значок, расположенный на верхней панели.</string>
+    <string name="help_device_failed_connection_message_3">Если проблема сохраняется, убедитесь, что датчик Bluetooth устройства исправен.</string>
+    <string name="help_paring_select_device_from_list">Выберите устройство, с которым вы хотите установить сопряжение, из списка доступных устройств.</string>
+    <string name="help_pairing_missing_device_message_1">Если устройство, с которым вы хотите выполнить сопряжение, не отображается, следуйте приведенным ниже инструкциям:</string>
+    <string name="help_pairing_missing_device_check_2">• Убедитесь, что видимость Bluetooth включена на удалённом устройстве.</string>
+    <string name="help_pairing_missing_device_check_location_for_android_11_or_less">• Убедитесь, что службы определения местоположения включены на вашем устройстве.</string>
+    <string name="help_pairing_connection_initialization_error_message_1">Если вы успешно связали оба устройства, но столкнулись с ошибками «%1$s» или «%2$s»:</string>
+    <string name="help_pairing_device_failed_connection_message_1">Если вы успешно соединили оба устройства, но не можете подключиться к удалённому устройству, обязательно следуйте инструкциям ниже:</string>
+    <string name="help_remote_control_buttons_are_not_working_title">Кнопки дистанционного управления</string>
+    <string name="help_remote_control_buttons_are_not_working_message">Если клавиатура, мышь или некоторые кнопки не работают, следуйте инструкциям ниже:</string>
+    <string name="help_remote_control_buttons_are_not_working_check_2">• Отключитесь от удалённого устройства.</string>
+    <string name="help_remote_control_buttons_are_not_working_check_3">• Удалите сопряжение устройства друг у друга, как на этом устройстве, так и на удалённом устройстве.</string>
+    <string name="help_remote_control_buttons_are_not_working_check_4">• Затем повторно выполните сопряжение двух устройств с помощью этого приложения.</string>
+    <string name="help_keyboard_wrong_character_sent_message">Если отправляемые символы некорректны, вам нужно настроить физическую клавиатуру на удалённом устройстве в соответствии с языком, выбранным в настройках приложения.</string>
+    <string name="unpair_device_failure">Ошибка! Устройство не удалось отсоединить.</string>
+    <string name="automatic_connect">Автоматически подключать</string>
+    <string name="disabled_automatic_connection_message">Хотите отключить автоматическое подключение?</string>
+    <string name="pairing_from_the_remote_device">Сопряжение с удаленным устройством</string>
+    <string name="name_of_this_device">Имя этого устройства: %1$s.</string>
+    <string name="pairing_from_a_remote_device_step_1_title">1. Включить видимость Bluetooth</string>
+    <string name="automatic_shorten">Автоматически</string>
+    <string name="pairing_from_a_remote_device_intro_title">Руководство по сопряжению устройства с удаленным устройством</string>
+    <string name="pairing_from_a_remote_device_step_1_content_1">Сначала необходимо включить видимость Bluetooth на этом устройстве.</string>
+    <string name="pairing_from_a_remote_device_step_1_content_2">Это устройство должно быть видимо другим устройствам под именем: %1$s.</string>
+    <string name="enabled_bluetooth_visibility">Включена видимость Bluetooth</string>
+    <string name="pairing_from_a_remote_device_step_2_content_1">На удаленном устройстве:</string>
+    <string name="pairing_from_a_remote_device_step_2_title">2. Соединить два устройства</string>
+    <string name="pairing_from_a_remote_device_step_4_title">4. Завершение</string>
+    <string name="pairing_from_a_remote_device_step_3_title">3. Отключите устройства</string>
+    <string name="pairing_from_a_remote_device_step_2_content_4">Если запрос на подтверждение не появился, перезапустите Bluetooth на удаленном устройстве и повторите предыдущие шаги.</string>
+    <string name="pairing_from_a_remote_device_step_3_content_2">- Перейдите в настройки Bluetooth на вашем устройстве.\n- Вручную отключите удаленное устройство.</string>
+    <string name="done">Готово</string>
+    <string name="unknown">неизвестно</string>
+    <string name="enter_bluetooth_address_manually">Введите адрес Bluetooth вручную</string>
+    <string name="bluetooth_address_prompt">Введите Bluetooth-адрес удаленного устройства:</string>
+    <string name="bluetooth_address">Bluetooth-адрес</string>
+    <string name="bluetooth_address_wrong_format">Введенный адрес имеет неправильный формат. Он должен содержать 6 пар шестнадцатеричных символов.\nПример: 00:1A:2B:3C:4D:5E.</string>
+    <string name="full_screen">На весь экран</string>
+    <string name="user_interface">Интерфейс</string>
+    <string name="navigation_mode">Режим навигации</string>
+    <string name="d_pad_description">Навигация через элементы управления направлением</string>
+    <string name="touchpad">Сенсорная панель</string>
+    <string name="minimalist_interface_info">Не отображает кнопки ТВ-каналов</string>
+    <string name="d_pad">Геймпад</string>
+    <string name="keyboard_portuguese_br">Португальский (Бразилия)</string>
+    <string name="keyboard_greek">Греческий</string>
+    <string name="keyboard_hebrew">Иврит</string>
+    <string name="information">Информация</string>
+    <string name="help_info_message">Если у вас возникли какие-либо проблемы, пожалуйста, посетите раздел помощи.</string>
+    <string name="tv">ТВ</string>
+    <string name="unpair_device_warning_message">Это устройство будет полностью отсоединено от вашего устройства. Вы действительно хотите продолжить?</string>
+    <string name="unpair">Отсоединить</string>
+    <string name="keyboard_portuguese">Португальский</string>
+    <string name="power">Включение</string>
+    <string name="keyboard_bulgarian">Болгарский</string>
+    <string name="retry">Повторить</string>
+    <string name="unpair_device">Отсоединить устройство</string>
+    <string name="keyboard_polish">Польский</string>
+    <string name="space_bar">Пробел</string>
+    <string name="advanced_keyboard">Расширенная клавиатура</string>
+    <string name="closed_captions">Субтитры</string>
+    <string name="menu">Меню</string>
+    <string name="meta">Meta</string>
+    <string name="ctrl">Ctrl</string>
+    <string name="alt">Alt</string>
+    <string name="alt_gr">Alt Gr</string>
+    <string name="keyboard_turkish">Турецкий</string>
+    <string name="use_the_gyroscope_to_control_the_mouse">Использовать гироскоп для управления мышью</string>
+    <string name="print_screen">Снимок экрана</string>
+    <string name="shift">Shift</string>
+    <string name="unpair_device_successful">Устройство успешно отсоединено.</string>
+    <string name="enabled_automatic_connection_message">Хотите ли вы автоматически подключаться к этому устройству при запуске приложения?</string>
+    <string name="pairing_from_a_remote_device_intro_content">На некоторых устройствах видимость Bluetooth может быть отключена, что не позволит приложению обнаружить их. Это руководство поможет вам решить эту проблему, объяснив, как выполнить сопряжение устройств напрямую с удаленного устройства.</string>
+    <string name="open_bluetooth_settings">Откройте настройки Bluetooth</string>
+    <string name="pairing_from_a_remote_device_step_2_content_3">Запрос на подтверждение сопряжения должен появиться на обоих устройствах. Вам необходимо принять этот запрос на обоих устройствах, чтобы завершить сопряжение Bluetooth.</string>
+    <string name="touchpad_description">Навигация с помощью сенсорных жестов</string>
+    <string name="pairing_from_a_remote_device_step_2_content_2">- Откройте настройки Bluetooth.\n- Выберите вариант сопряжения нового устройства.\n- Устройство \"%1$s\" должно появиться в списке доступных устройств.\n- Выберите устройство \"%1$s\", чтобы начать сопряжение.</string>
+    <string name="pairing_from_a_remote_device_step_3_content_1">Если сопряжение прошло успешно, устройство Android должно автоматически подключиться к удаленному устройству. Однако это соединение не использует протокол HID (Human Interface Device), что препятствует работе пульта дистанционного управления. Чтобы решить эту проблему:</string>
+    <string name="pairing_from_a_remote_device_step_4_content">Если вы выполнили все предыдущие шаги, сопряжение прошло успешно, и вы отключили оба устройства, вы можете нажать кнопку \"%1$s\". Удаленное устройство должно появиться в списке сопряженных устройств. Выберите его, чтобы установить соединение с использованием протокола HID.</string>
+    <string name="use_minimalist_interface">Использовать минималистичный интерфейс</string>
+    <string name="help_remote_control_buttons_are_not_working_message_2">Каждое приложение, использующее протокол HID, может использовать свой профиль. Если вы ранее сопрягали устройства с помощью другого приложения, вам может потребоваться повторное сопряжение, чтобы сбросить профиль. Без этой процедуры кнопки могут работать неправильно или передавать неверные значения.</string>
+    <string name="open">Открыть</string>
+    <string name="connected_off">Нет подключенных устройств</string>
+    <string name="integrate_advanced_keyboard_into_the_view">Интегрировать расширенную клавиатуру в представление</string>
+    <string name="keyboard_ukrainian">Украинский</string>
+    <string name="keyboard_persian">Персидский</string>
+    <string name="help_hid_service_not_initialized_title">Служба HID не инициализирована</string>
+    <string name="help_hid_service_not_initialized_message_3">• Если эта опция недоступна, ваше устройство может не поддерживать профиль HID. В этом случае, к сожалению, вы не сможете использовать это приложение на этом устройстве.</string>
+    <string name="help_hid_service_not_initialized_message_1">Если сообщение указывает на то, что служба HID не инициализирована, перейдите в настройки разработчика вашего устройства и найдите параметр «Отключить профиль устройства Bluetooth HID»:</string>
+    <string name="help_info_hid_service_not_initialized_message">Служба HID не инициализирована. Пожалуйста, ознакомьтесь со справкой.</string>
+    <string name="help_hid_service_not_initialized_message_2">• Если эта опция доступна, отключите её, затем перезапустите устройство. После перезапуска профиль HID должен работать нормально.</string>
+    <string name="use_enter_for_selection_title">Для выбора использовать клавишу Ввод</string>
+    <string name="use_enter_for_selection_summary">Включите эту опцию только если клавиша выбора не работает</string>
+    <string name="remove_from_favorites">Убрать из избранного</string>
+    <string name="favorites">Избранное</string>
+    <string name="hide_bluetooth_activation_button">Скрыть кнопку активации Bluetooth при запуске приложения</string>
+    <string name="advanced_options">Расширенные опции</string>
+    <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="no_device_registered">На этом устройстве не зарегистрировано ни одного устройства.</string>
+    <string name="connect">Подключиться</string>
+    <string name="media_controls">Управление медиа</string>
+    <string name="code_version">Версия %1$s</string>
+    <string name="stop">Cтоп</string>
+    <string name="use_mouse_navigation_by_default">Использовать навигацию мышью по умолчанию</string>
+    <string name="screenshot">Скриншот</string>
+    <string name="more_buttons">Доп. кнопки</string>
+    <string name="repeat">Повтор</string>
+    <string name="previous_track">Предыдущий трек</string>
+    <string name="play_pause">Играть / Пауза</string>
+    <string name="next_track">Следующий трек</string>
+    <string name="rewind">Перемотать назад</string>
+    <string name="forward">Перемотать вперёд</string>
+    <string name="volume_up">Громкость +</string>
+    <string name="volume_down">Громкость -</string>
+    <string name="brightness_up">Яркость +</string>
+    <string name="brightness_down">Яркость -</string>
+    <string name="red_menu_button">Красная</string>
+    <string name="green_menu_button">Зелёная</string>
+    <string name="blue_menu_button">Синяя</string>
+    <string name="yellow_menu_button">Жёлтая</string>
+    <string name="keyboard_tab">Вкладка</string>
+    <string name="assign_action_volume_up_button">Назначить действие на кнопку увеличения громкости</string>
+    <string name="assign_action_volume_down_button">Назначить действие на кнопку уменьшения громкости</string>
+    <string name="default_option">По умолчанию</string>
+    <string name="page_up">Страница вверх</string>
+    <string name="page_down">Страница вниз</string>
+    <string name="mouse_scroll_speed">Скорость прокрутки</string>
+    <string name="show_remote_buttons_in_notification">Отображать кнопки пульта дистанционного управления в уведомлении</string>
+    <string name="keyboard_arabic">Арабский</string>
+</resources>

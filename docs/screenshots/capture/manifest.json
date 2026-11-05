@@ -1,0 +1,25 @@
+{
+  "fixtureOnly": true,
+  "screenshots": [
+    {
+      "file": "H01-default-example-UI_TEST.png",
+      "sha256": "d53855aa26c2261aa160c0aa31e5ca9eaeb1d2476315b5ee454807eac746d3c8"
+    },
+    {
+      "file": "H02-instructions-UI_TEST.png",
+      "sha256": "dfe16aaa85e93c3346c3c01f755733753dc10c4f7f334f63df587454fefc082a"
+    },
+    {
+      "file": "H03-instructions-end-UI_TEST.png",
+      "sha256": "395e3a668d9e72679a820bd41f74d65bfc63e261f581ec29245c08f858f10d0d"
+    },
+    {
+      "file": "H04-open-source-top-UI_TEST.png",
+      "sha256": "3d556fd1d0011128a86f02a1caf83877fd281308a6e6e3883fc2a1d186e1f31d"
+    },
+    {
+      "file": "H05-open-source-scroll-UI_TEST.png",
+      "sha256": "f08cd8491f3d4ba3fa0335edbaf7383de11eb26ff5e01f48b6182d2fb3c921bd"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Reorderable 3.1.0
+Copyright 2023 Calvin Liang
+https://github.com/Calvin-LL/Reorderable
+Licensed under Apache License 2.0; see Reorderable-LICENSE.txt.
+Used unchanged as a Maven dependency for home-screen drag and drop.

@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- AiPhoneKVM modifications, 2026-11-06. Original notices retained; see NOTICE.md. -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AiPhoneKVM · 设备控制台</title>
+  <meta name="description" content="管理你的AiPhoneKVM设备，为主控端配置独立、安全的远程连接。">
+  <link rel="stylesheet" href="/assets/style.css"><script defer src="/assets/config.js"></script><script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <div id="loading" class="loading">正在打开控制台…</div>
+  <main id="auth" class="auth-shell" hidden>
+    <section class="auth-story">
+      <a class="brand" href="/" aria-label="AiPhoneKVM首页"><span class="brand-mark">A</span><span>AiPhoneKVM</span></a>
+      <div class="story-content"><span class="eyebrow">YOUR DEVICES. WITHIN REACH.</span><h1>设备在身边，<br>控制不受距离限制。</h1><p>把主控端接入你的账号，<br>从任何地方，连接自己的设备。</p>
+        <div class="connection-art" aria-hidden="true"><div class="art-node desktop-node"><span>⌘</span><small>控制端</small></div><div class="art-line"><i></i><b>MQTT / TLS</b></div><div class="art-node phone-node"><span>▣</span><small>主控端</small></div><div class="art-line short"><i></i><b>蓝牙</b></div><div class="art-node target-node"><span>▣</span><small>被控端</small></div></div>
+      </div><div class="story-foot"><span class="tiny-dot"></span> 独立设备凭据 · 加密连接 · 账号隔离</div>
+    </section>
+    <section class="auth-form-panel"><div class="auth-form-wrap">
+      <div class="mobile-brand">AiPhoneKVM / 控制台</div>
+      <span class="eyebrow ink">DEVICE CONSOLE</span><h2 id="auth-title">欢迎回来</h2><p id="auth-subtitle" class="muted">登录后，继续管理你的设备。</p>
+      <div class="auth-tabs" role="tablist"><button id="login-tab" role="tab" aria-selected="true">登录</button><button id="register-tab" role="tab" aria-selected="false">注册账号</button></div>
+      <form id="auth-form"><label for="username">用户名</label><input id="username" name="username" autocomplete="username" minlength="3" maxlength="32" pattern="[A-Za-z0-9_]{3,32}" required placeholder="3–32位字母、数字或下划线">
+        <label for="password">密码</label><div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" minlength="10" maxlength="128" required placeholder="至少10个字符"><button id="show-password" type="button" class="text-button" aria-label="显示密码">显示</button></div>
+        <div id="confirm-wrap" hidden><label for="confirm-password">确认密码</label><input id="confirm-password" type="password" autocomplete="new-password" maxlength="128" placeholder="再次输入密码"></div>
+        <p id="auth-error" class="error" role="alert"></p><button class="primary full" id="auth-submit" type="submit">登录控制台 <span>→</span></button>
+      </form><p class="auth-note">网站账号用于登录。每台设备会拥有独立的 MQTT 连接凭据，其他用户无法访问。</p>
+    </div></section>
+  </main>
+
+  <div id="console" class="console-shell" hidden>
+    <aside class="sidebar"><a class="brand" href="/"><span class="brand-mark">A</span><span>AiPhoneKVM<small>设备控制台</small></span></a><div class="nav-caption">工作空间</div><button class="nav-item selected"><span>▦</span> 我的设备</button><button class="nav-item" id="open-guide"><span>↗</span> 连接指南</button><div class="sidebar-bottom"><span class="secure-badge">● TLS 加密连接</span><p>主控端与被控端仍需<br>保持蓝牙连接。</p></div></aside>
+    <div class="workspace"><header class="topbar"><span class="breadcrumb">工作空间 <span>/</span> 我的设备</span><div class="account-menu"><span class="avatar" id="avatar">U</span><span id="account-name"></span><button id="logout" class="text-button">退出</button></div></header>
+      <main class="dashboard"><div class="page-heading"><div><span class="eyebrow ink">DEVICE WORKSPACE</span><h1>我的设备</h1><p class="muted">管理主控端连接，随时访问自己的设备。</p></div><button id="add-device" class="primary"><span>＋</span> 添加主控端</button></div>
+        <div class="stats-grid"><section class="stat-card"><span>全部主控端</span><strong id="total-count">0</strong><small>每个账号最多 5 台</small></section><section class="stat-card"><span><i class="status-dot online"></i> 当前在线</span><strong id="online-count">0</strong><small>连接与任务状态自动刷新</small></section><section class="stat-card connection-stat"><span>远程连接</span><strong>MQTT<span> / TLS</span></strong><small id="public-mqtt">按部署配置连接</small></section></div>
+        <div class="section-heading"><h2>设备列表 <span id="list-count">0</span></h2><button class="text-button" id="refresh">↻ 刷新状态</button></div>
+        <p id="dashboard-error" class="error" role="alert"></p><div id="broker-warning" class="notice" hidden>消息服务正在重连。账号可正常使用，请稍后再配置设备。</div>
+        <div id="empty-state" class="empty-state"><div class="empty-icon">▣<span>＋</span></div><h3>连接你的第一台主控端</h3><p>点击添加主控端，显示配对二维码。<br>用手机 AiPhoneKVM 扫码确认，自动保存连接配置。</p><button id="empty-add" class="primary">添加主控端 <span>→</span></button><small>已有设备也可扫码更新连接，无需查找旧密码。</small></div>
+        <div id="device-list" class="device-list"></div>
+        <div class="guide-strip"><div class="guide-symbol">↗</div><div><strong>第一次连接？三步即可准备就绪。</strong><p>添加主控端 → 手机扫码确认 → 选择被控端并开启自动化</p></div><button id="strip-guide" class="text-button">查看指南 →</button></div>
+        <footer>AiPhoneKVM <span>·</span> 仅你能管理自己的设备 <span>·</span> 支持远程 AI 任务与指令控制，屏幕回传使用原局域网连接</footer>
+      </main>
+    </div>
+  </div>
+  <dialog id="pair-dialog"><div class="dialog-heading"><div><span class="eyebrow ink">SCAN TO CONNECT</span><h2>扫码添加主控端</h2></div><button class="close-dialog icon-button" aria-label="关闭">×</button></div><p>打开手机 AiPhoneKVM，进入 AI 自动化的“网站”标签，打开<strong>网站设置 / 扫码</strong>，先保存本站地址，再扫码。</p><div class="pair-code"><canvas id="pair-qr" width="320" height="320" aria-label="一次性设备绑定二维码"></canvas></div><p id="pair-state" class="pair-state" role="status">正在生成二维码…</p><p class="muted">手机确认账号后自动配置，无需填写设备 ID 或 MQTT 密码。</p><p id="pair-error" class="error" role="alert"></p><div class="dialog-actions"><button id="pair-refresh" class="secondary">刷新二维码</button><a id="pair-open" class="primary" href="#">在 AiPhoneKVM 中打开</a></div><p class="field-help">还未安装？<a class="download-app" hidden target="_blank" rel="noopener">下载最新版 AiPhoneKVM 主控端</a>。</p><details><summary>高级设置</summary><p class="field-help">仅独立 MQTT 客户端或旧版本手动配置时使用。</p><button id="manual-device" class="secondary">手动添加连接</button></details></dialog>
+  <dialog id="device-dialog"><div class="dialog-heading"><div><span class="eyebrow ink">NEW CONNECTION</span><h2>添加主控端</h2></div><button class="close-dialog icon-button" aria-label="关闭">×</button></div><p class="muted">一台安装 AiPhoneKVM 的手机对应一台主控端。</p><form id="device-form"><label for="device-name">设备名称</label><input id="device-name" maxlength="40" required placeholder="例如：书桌上的小米手机"><label for="device-id">主控端设备 ID</label><input id="device-id" maxlength="64" pattern="[A-Za-z0-9_-]{1,64}" required placeholder="复制手机上显示的设备 ID"><p class="field-help">在主控端进入 AI 自动化 → 设置 → MQTT 高级设置，即可查看设备 ID。</p><label for="device-mqtt-password">MQTT 密码（自己设置）</label><div class="password-wrap"><input id="device-mqtt-password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required placeholder="设置一个你记得住的密码，至少8位"><button type="button" class="text-button toggle-mqtt-password" data-field="device-mqtt-password">显示</button></div><p class="field-help">主控端和控制端都使用这个密码。连接账号和主题前缀由网站分配，创建后直接复制到手机。</p><p id="device-error" class="error" role="alert"></p><div class="dialog-actions"><button type="button" class="secondary close-dialog">取消</button><button id="device-submit" class="primary">创建连接 →</button></div></form></dialog>
+  <dialog id="connection-dialog" class="wide-dialog"><div class="dialog-heading"><div><span class="eyebrow ink">CONNECTION DETAILS</span><h2>配置主控端连接</h2></div><button class="close-dialog icon-button" aria-label="关闭">×</button></div><div class="notice">MQTT 密码就是你刚刚设置的密码。请保存连接参数，之后也可随时自行修改。</div><p class="muted">在手机上先停止自动化，填写下列参数并保存，然后重新开启。</p><div id="connection-details"></div><div class="dialog-actions"><button id="copy-connection" class="secondary">复制全部参数</button><button class="primary close-dialog">我已保存</button></div></dialog>
+  <dialog id="guide-dialog" class="wide-dialog"><div class="dialog-heading"><div><span class="eyebrow ink">QUICK START</span><h2>连接自己的设备</h2></div><button class="close-dialog icon-button" aria-label="关闭">×</button></div><ol class="guide-steps"><li><strong>在主控端选择设备</strong><p>打开 AiPhoneKVM，在首页底部“蓝牙设备”选择被控端，再点击“AI 自动化”。网站绑定不会自动开启 AI 任务。</p></li><li><strong>在这里添加主控端</strong><p>点击“添加主控端”显示二维码，在手机 AI 自动化的“网站”标签打开“网站设置 / 扫码”，保存本站地址后扫描。</p></li><li><strong>在手机确认绑定</strong><p>核对网站账号后点击确认，连接配置自动保存并验证。随后返回 AI 自动化，按需要开启自动化和启动任务。</p></li></ol><div class="notice">电脑使用独立的控制端凭据，连接时请同时填写给出的客户端 ID。主控端和被控端需保持蓝牙连接；网页暂不提供屏幕画面。</div><div class="dialog-actions"><button class="primary close-dialog">知道了</button></div></dialog>
+  <dialog id="password-dialog"><div class="dialog-heading"><div><span class="eyebrow ink">MQTT PASSWORD</span><h2>设置 MQTT 密码</h2></div><button class="close-dialog icon-button" aria-label="关闭">×</button></div><p id="password-device-name" class="muted"></p><form id="mqtt-password-form"><label for="new-mqtt-password">新 MQTT 密码</label><div class="password-wrap"><input id="new-mqtt-password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required placeholder="自己设置，至少8个字符"><button type="button" class="text-button toggle-mqtt-password" data-field="new-mqtt-password">显示</button></div><p class="field-help">主控端和控制端统一使用这个密码，连接用户名保持不变。</p><div class="notice">保存后旧 MQTT 密码失效。请在主控端停止自动化，填入新密码并重新开启。</div><p id="mqtt-password-error" class="error" role="alert"></p><div class="dialog-actions"><button type="button" class="secondary close-dialog">取消</button><button id="mqtt-password-submit" class="primary">保存新密码</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body></html>
