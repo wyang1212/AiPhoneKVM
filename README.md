@@ -19,7 +19,7 @@ Android 蓝牙键鼠、媒体遥控、TV、Xbox/FC 布局与可配置的视觉�
 
 ## 下载与验收
 
-当前 2.9.4 为审计测试版。TV 重复进入、真实相机光学闭环、语音和空鼠体感仍有待验收项目，详见验收记录。
+当前 2.9.4 为审计测试版。用户已确认手点 TV 入口可正常进入；TV 完整按键实控、真实相机光学闭环、语音和空鼠体感仍有待验收项目，详见验收记录。
 
 安装包和对应源码见 [GitHub Releases](https://github.com/wyang1212/AiPhoneKVM/releases)。[逐页截图索引](docs/screenshots/README.md)区分示例界面与实际功能验收，详细结果和限制见 [验收记录](docs/QA.md)。
 
