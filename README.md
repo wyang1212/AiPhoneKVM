@@ -11,6 +11,50 @@ Android 蓝牙键鼠、媒体遥控、TV、Xbox/FC 布局与可配置的视觉�
 - 模型采用可配置的兼容 Chat Completions 图像接口。单步建议与有边界的目标循环均在操作后获取新画面；不能把动作发送成功当作任务完成。
 - 可选局域网 HTTP 控制台、MQTT 和自建 HTTPS 网站；需要自行部署、配置与鉴权。
 
+## 功能截图
+
+以下为 2.9.4 的界面截图，使用无秘密的示例配置；点击图片可查看原图。AI 状态、摄像头画面及网页设备数据包含模拟示例，实际功能验收范围见[验收记录](docs/QA.md)。
+
+| 首页与八个功能入口 | 蓝牙设备管理 | 应用设置 |
+| :---: | :---: | :---: |
+| <a href="docs/screenshots/controller/C05-home-selected-UI_TEST.png"><img src="docs/screenshots/controller/C05-home-selected-UI_TEST.png" alt="首页与八个功能入口" width="240"></a> | <a href="docs/screenshots/controller/C10-device-paired-01-UI_TEST.png"><img src="docs/screenshots/controller/C10-device-paired-01-UI_TEST.png" alt="蓝牙设备管理" width="240"></a> | <a href="docs/screenshots/controller/C24-settings-01-UI_TEST.png"><img src="docs/screenshots/controller/C24-settings-01-UI_TEST.png" alt="应用设置" width="240"></a> |
+
+| 竖屏键鼠 · F/J 红色 | 鼠标与空鼠界面 | 媒体遥控 |
+| :---: | :---: | :---: |
+| <a href="docs/screenshots/controller/M01-compact-letters-UI_TEST.png"><img src="docs/screenshots/controller/M01-compact-letters-UI_TEST.png" alt="竖屏键鼠与红色 F/J 键" width="240"></a> | <a href="docs/screenshots/controller/M08-mouse-UI_TEST.png"><img src="docs/screenshots/controller/M08-mouse-UI_TEST.png" alt="触控板与空鼠开关" width="240"></a> | <a href="docs/screenshots/controller/M07-media-01-UI_TEST.png"><img src="docs/screenshots/controller/M07-media-01-UI_TEST.png" alt="媒体音量亮度和播放遥控" width="240"></a> |
+
+| AI 任务 | 模型与自动化设置 | 手机端网站绑定 |
+| :---: | :---: | :---: |
+| <a href="docs/screenshots/controller/A01-task-default-01-UI_TEST.png"><img src="docs/screenshots/controller/A01-task-default-01-UI_TEST.png" alt="AI 自动化目标任务" width="240"></a> | <a href="docs/screenshots/controller/A14-ai-settings-01-UI_TEST.png"><img src="docs/screenshots/controller/A14-ai-settings-01-UI_TEST.png" alt="AI 模型与自动化设置" width="240"></a> | <a href="docs/screenshots/controller/A18-website-tab-01-UI_TEST.png"><img src="docs/screenshots/controller/A18-website-tab-01-UI_TEST.png" alt="手机端网站绑定" width="240"></a> |
+
+| TV 遥控 | 摄像头观察 · 合成画面示例 | 被控端截图助手 |
+| :---: | :---: | :---: |
+| <a href="docs/screenshots/controller/M09-tv-complete-UI_TEST.png"><img src="docs/screenshots/controller/M09-tv-complete-UI_TEST.png" alt="TV 遥控按键" width="240"></a> | <a href="docs/screenshots/controller/A11-synthetic-camera-live-01-UI_TEST.png"><img src="docs/screenshots/controller/A11-synthetic-camera-live-01-UI_TEST.png" alt="摄像头观察的合成画面示例" width="240"></a> | <a href="docs/screenshots/capture/H01-default-example-UI_TEST.png"><img src="docs/screenshots/capture/H01-default-example-UI_TEST.png" alt="被控端截图助手" width="240"></a> |
+
+### 横屏键盘
+
+F/J 使用红色，字母、数字、符号、修饰键和功能区用不同颜色区分。
+
+<a href="docs/screenshots/controller/M06-landscape-keyboard-UI_TEST.png"><img src="docs/screenshots/controller/M06-landscape-keyboard-UI_TEST.png" alt="横屏彩色键盘，F/J 为红色" width="820"></a>
+
+### 游戏手柄
+
+| Xbox 布局 | FC 红白机布局 |
+| :---: | :---: |
+| <a href="docs/screenshots/controller/M16-xbox-UI_TEST.png"><img src="docs/screenshots/controller/M16-xbox-UI_TEST.png" alt="Xbox 双摇杆手柄布局" width="400"></a> | <a href="docs/screenshots/controller/M17-fc-UI_TEST.png"><img src="docs/screenshots/controller/M17-fc-UI_TEST.png" alt="FC 红白机手柄布局" width="400"></a> |
+
+### 网站与局域网控制台
+
+网站设备管理与任务入口（示例数据）：
+
+<a href="docs/screenshots/web/W06-online-UI_TEST.jpg"><img src="docs/screenshots/web/W06-online-UI_TEST.jpg" alt="网站设备管理与 AI 任务入口，示例数据" width="820"></a>
+
+局域网控制台（示例状态）：
+
+<a href="docs/screenshots/web/L02-lan-connected-UI_TEST.jpg"><img src="docs/screenshots/web/L02-lan-connected-UI_TEST.jpg" alt="局域网控制台，示例状态" width="820"></a>
+
+[查看全部 142 张逐页截图、更多状态与弹窗](docs/screenshots/README.md)。
+
 ## 默认配置与隐私
 
 公开版没有可用的默认服务器或模型：网站为 `https://controller.example.invalid`，模型为 `https://model.example.invalid/v1`，模型名称为 `example-vision-model`，更新站点为无效示例。`.invalid` 域名仅供说明，不是在线服务。填写你自己的 HTTPS 地址和密钥后才可使用网络/模型功能。更换模型地址需重新填写密钥，原密钥不会转发给新服务。
